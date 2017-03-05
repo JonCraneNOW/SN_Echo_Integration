@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,RPT48ffe15913839600d0143d622244b0d8</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2016-05-12 18:29:47</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>43e6d316135b9a00d0143d622244b0f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,rpt48ffe15913839600d0143d622244b0d8</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_ui_view_43e6d316135b9a00d0143d622244b0f8</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2016-05-12 18:29:47</sys_updated_on>
+        <title>Sys_popup,rpt48ffe15913839600d0143d622244b0d8</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

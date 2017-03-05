@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_ci_outage" version="2" view="RPTd13c9aa913879600d0143d622244b096">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cmdb_ci</element>
+            <list_id display_value="cmdb_ci_outage" element="NULL" name="cmdb_ci_outage" parent="NULL" relationship="NULL" sys_domain="global" view="571742c9db9d320015f2de01ce961960">2d3c9aa913879600d0143d622244b096</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-04-27 20:02:07</sys_created_on>
+            <sys_id>ed3c9aa913879600d0143d622244b096</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-04-27 20:02:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>type</element>
+            <list_id display_value="cmdb_ci_outage" element="NULL" name="cmdb_ci_outage" parent="NULL" relationship="NULL" sys_domain="global" view="571742c9db9d320015f2de01ce961960">2d3c9aa913879600d0143d622244b096</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-04-27 20:02:07</sys_created_on>
+            <sys_id>213c9aa913879600d0143d622244b097</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-04-27 20:02:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>begin</element>
+            <list_id display_value="cmdb_ci_outage" element="NULL" name="cmdb_ci_outage" parent="NULL" relationship="NULL" sys_domain="global" view="571742c9db9d320015f2de01ce961960">2d3c9aa913879600d0143d622244b096</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-04-27 20:02:07</sys_created_on>
+            <sys_id>613c9aa913879600d0143d622244b097</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-04-27 20:02:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>end</element>
+            <list_id display_value="cmdb_ci_outage" element="NULL" name="cmdb_ci_outage" parent="NULL" relationship="NULL" sys_domain="global" view="571742c9db9d320015f2de01ce961960">2d3c9aa913879600d0143d622244b096</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-04-27 20:02:07</sys_created_on>
+            <sys_id>a13c9aa913879600d0143d622244b097</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-04-27 20:02:07</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_ci_outage</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-04-27 20:02:07</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2d3c9aa913879600d0143d622244b096</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_outage</sys_name>
+            <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_ci_outage_RPTd13c9aa913879600d0143d622244b096</sys_update_name>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-04-27 20:02:07</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptd13c9aa913879600d0143d622244b096" name="RPTd13c9aa913879600d0143d622244b096">571742c9db9d320015f2de01ce961960</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

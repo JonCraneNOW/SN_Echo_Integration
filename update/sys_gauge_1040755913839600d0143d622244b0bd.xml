@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_gauge">
+    <sys_gauge action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <aggregate>COUNT</aggregate>
+        <attributes/>
+        <fieldname/>
+        <group_field/>
+        <lower_limit/>
+        <name>Changes scheduled for today</name>
+        <order/>
+        <other_threshold>-2</other_threshold>
+        <parent/>
+        <query/>
+        <report display_value="Changes scheduled for today">6a30355913839600d0143d622244b037</report>
+        <roles/>
+        <stack_field/>
+        <sys_class_name>sys_gauge</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2016-04-26 22:11:35</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1040755913839600d0143d622244b0bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Changes scheduled for today</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_gauge_1040755913839600d0143d622244b0bd</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2016-04-26 22:11:35</sys_updated_on>
+        <tablename>change_request</tablename>
+        <title>Changes scheduled for today</title>
+        <type>report</type>
+        <upper_limit/>
+        <url/>
+        <view/>
+    </sys_gauge>
+</record_update>

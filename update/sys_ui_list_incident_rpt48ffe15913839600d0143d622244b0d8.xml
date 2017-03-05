@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="incident" version="2" view="RPT48ffe15913839600d0143d622244b0d8">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="571742c9db9d320015f2de01ce961965">7e76eedc13e31e0079edd8e32244b00e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-05-18 20:05:59</sys_created_on>
+            <sys_id>3276eedc13e31e0079edd8e32244b00f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-05-18 20:05:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="571742c9db9d320015f2de01ce961965">7e76eedc13e31e0079edd8e32244b00e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-05-18 20:05:59</sys_created_on>
+            <sys_id>7276eedc13e31e0079edd8e32244b00f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-05-18 20:05:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>contact_type</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="571742c9db9d320015f2de01ce961965">7e76eedc13e31e0079edd8e32244b00e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-05-18 20:05:59</sys_created_on>
+            <sys_id>b276eedc13e31e0079edd8e32244b00f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-05-18 20:05:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="571742c9db9d320015f2de01ce961965">7e76eedc13e31e0079edd8e32244b00e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-05-18 20:05:59</sys_created_on>
+            <sys_id>f276eedc13e31e0079edd8e32244b00f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-05-18 20:05:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="571742c9db9d320015f2de01ce961965">7e76eedc13e31e0079edd8e32244b00e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-05-18 20:05:59</sys_created_on>
+            <sys_id>3676eedc13e31e0079edd8e32244b00f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-05-18 20:05:59</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>incident</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2016-05-18 20:05:59</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7e76eedc13e31e0079edd8e32244b00e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>incident</sys_name>
+            <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+            <sys_update_name>sys_ui_list_incident_RPT48ffe15913839600d0143d622244b0d8</sys_update_name>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2016-05-18 20:05:59</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt48ffe15913839600d0143d622244b0d8" name="RPT48ffe15913839600d0143d622244b0d8">571742c9db9d320015f2de01ce961965</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

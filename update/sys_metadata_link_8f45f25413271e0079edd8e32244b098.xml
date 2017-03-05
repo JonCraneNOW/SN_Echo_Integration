@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>0679b69713f61600d0143d622244b09a</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;record_update table="x_snc_amazon_echo_utterance"&gt;
+    &lt;x_snc_amazon_echo_utterance action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;keyword&gt;CheckStatusInc&lt;/keyword&gt;
+        &lt;name&gt;CheckStatus Step 2&lt;/name&gt;
+        &lt;next/&gt;
+        &lt;script&gt;&lt;![CDATA[(function(content, attributes, erb){
+	var num = "INC" + content.Number.value;
+	
+	var inc = new GlideRecord('incident');
+	if (inc.get('number', num)){
+		var updatedArr = inc.sys_updated_on.getDisplayValue().split(" ");
+		var updatedDate = updatedArr[0];
+		var updatedTime = updatedArr[1].split(":");
+		updatedTime = updatedTime[0] + ":" + updatedTime[1];
+		
+		var notes = inc.comments.getJournalEntry(-1);
+		var na = notes.split("\n\n");
+		notes = na[0];
+		
+		//Message output...
+		msg = "&lt;speak&gt;";
+		msg += "The current status of your incident is: " + inc.state.getDisplayValue() + ". ";
+		msg += "Your incident was last updated on: " + updatedDate + " at " + updatedTime  + ". ";
+		
+		if (notes != "" &amp;&amp; notes != null) {
+			notes = notes.split("\n");
+			msg += "The last update was: " + notes[1] + ".";
+		}
+		
+		msg += "&lt;/speak&gt;";
+		erb.setOutputSpeech("SSML", "", msg);
+		//End message output
+	} else {
+		erb.setReprompt("PlainText", "I was unable to find that Incident. What was that Incident number again?");
+	}
+	erb.setEnd(true);
+	
+	result = erb.getResponse();
+	
+	
+	
+})(content, attributes, new EchoResponseBuilder());]]&gt;&lt;/script&gt;
+        &lt;sys_created_by&gt;jc&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2016-04-20 22:35:31&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0679b69713f61600d0143d622244b09a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;30&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;jc&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2016-04-21 17:32:07&lt;/sys_updated_on&gt;
+    &lt;/x_snc_amazon_echo_utterance&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2016-05-18 21:10:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>8f45f25413271e0079edd8e32244b098</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CheckStatus Step 2</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_metadata_link_8f45f25413271e0079edd8e32244b098</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2016-05-18 21:10:44</sys_updated_on>
+        <tablename>x_snc_amazon_echo_utterance</tablename>
+    </sys_metadata_link>
+</record_update>

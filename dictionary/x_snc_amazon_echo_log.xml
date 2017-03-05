@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Log" max_length="40" name="x_snc_amazon_echo_log" type="collection">
+        <element label="Attributes" max_length="1000" name="attributes" type="string"/>
+        <element label="Intent" max_length="32" name="intent" reference="x_snc_amazon_echo_utterance" type="reference"/>
+        <element label="Slots" max_length="1000" name="slots" type="string"/>
+        <index name="index">
+            <element name="intent"/>
+        </index>
+    </element>
+</database>

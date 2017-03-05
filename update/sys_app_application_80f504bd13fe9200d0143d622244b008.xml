@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2016-04-15 17:28:33</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>80f504bd13fe9200d0143d622244b008</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Amazon Echo</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_app_application_80f504bd13fe9200d0143d622244b008</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2016-04-15 17:28:33</sys_updated_on>
+        <title>Amazon Echo</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

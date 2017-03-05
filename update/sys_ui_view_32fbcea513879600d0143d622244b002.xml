@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>k16</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2016-04-27 18:51:13</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>32fbcea513879600d0143d622244b002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>K16</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_ui_view_32fbcea513879600d0143d622244b002</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2016-04-27 18:51:13</sys_updated_on>
+        <title>K16</title>
+        <user/>
+    </sys_ui_view>
+</record_update>
