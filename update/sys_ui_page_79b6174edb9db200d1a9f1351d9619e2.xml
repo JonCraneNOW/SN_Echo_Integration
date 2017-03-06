@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[var copyTextareaBtn = document.querySelector('.js-textareacopybtn');
+
+copyTextareaBtn.addEventListener('click', function(event) {
+	var copyTextarea = document.querySelector('.js-copytextarea');
+	copyTextarea.select();
+
+	try {
+		var successful = document.execCommand('copy');
+		var msg = successful ? 'successful' : 'unsuccessful';
+		console.log('Copying text command was ' + msg);
+	} catch (err) {
+		console.log('Oops, unable to copy');
+	}
+});
+
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_amazon_echo_generate_utterances.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:evaluate>
+		var utterances = new x_snc_amazon_echo.EchoSkillDataGenerator().generateUtterances();
+	</g:evaluate>
+	Copy and paste the Utterances below into your Amazon Alexa skill kit. See the below example:<br />
+	<div>
+		<img src="Utterances.png" width="700"/>
+	</div>
+	<br />
+
+	<textarea style="height:300px;" class="form-control js-copytextarea" rows="15">
+		$[utterances]
+	</textarea>
+
+	<br />
+
+	<div style="float:right;">
+		<button class="btn-primary js-textareacopybtn" onClick="showCopiedText()">Copy to Clipboard</button>
+	</div>
+</j:jelly>]]></html>
+        <name>generate_utterances</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-06 06:07:09</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>79b6174edb9db200d1a9f1351d9619e2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>generate_utterances</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_ui_page_79b6174edb9db200d1a9f1351d9619e2</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-06 06:08:32</sys_updated_on>
+    </sys_ui_page>
+</record_update>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="sys_db_object" relationship="4344f6f5bf1320001875647fcf0739ad" sys_domain="global" table="sys_dictionary" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>column_label</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="sys_db_object" relationship="4344f6f5bf1320001875647fcf0739ad" sys_domain="global" view="Default view">8eb1fcd8ef423000a61d5a3615c0fb55</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2012-11-27 20:54:45</sys_created_on>
+            <sys_id>ceb1fcd8ef423000a61d5a3615c0fb56</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2012-11-27 20:54:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>internal_type</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="sys_db_object" relationship="4344f6f5bf1320001875647fcf0739ad" sys_domain="global" view="Default view">8eb1fcd8ef423000a61d5a3615c0fb55</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2012-11-27 20:54:45</sys_created_on>
+            <sys_id>86b1fcd8ef423000a61d5a3615c0fb57</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2012-11-27 20:54:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>reference</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="sys_db_object" relationship="4344f6f5bf1320001875647fcf0739ad" sys_domain="global" view="Default view">8eb1fcd8ef423000a61d5a3615c0fb55</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2012-11-27 20:54:45</sys_created_on>
+            <sys_id>0ab1fcd8ef423000a61d5a3615c0fb57</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2012-11-27 20:54:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>max_length</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="sys_db_object" relationship="4344f6f5bf1320001875647fcf0739ad" sys_domain="global" view="Default view">8eb1fcd8ef423000a61d5a3615c0fb55</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2012-11-27 20:54:45</sys_created_on>
+            <sys_id>8ab1fcd8ef423000a61d5a3615c0fb57</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2012-11-27 20:54:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>default_value</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="sys_db_object" relationship="4344f6f5bf1320001875647fcf0739ad" sys_domain="global" view="Default view">8eb1fcd8ef423000a61d5a3615c0fb55</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2012-11-27 20:54:45</sys_created_on>
+            <sys_id>0eb1fcd8ef423000a61d5a3615c0fb57</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2012-11-27 20:54:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>display</element>
+            <list_id display_value="sys_dictionary" element="NULL" name="sys_dictionary" parent="sys_db_object" relationship="4344f6f5bf1320001875647fcf0739ad" sys_domain="global" view="Default view">8eb1fcd8ef423000a61d5a3615c0fb55</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2012-11-27 20:54:45</sys_created_on>
+            <sys_id>8eb1fcd8ef423000a61d5a3615c0fb57</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2012-11-27 20:54:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_dictionary</name>
+            <parent>sys_db_object</parent>
+            <position/>
+            <relationship display_value="Table Columns">4344f6f5bf1320001875647fcf0739ad</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2017-03-05 23:59:41</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c3928a86dbd9b200d1a9f1351d9619f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_dictionary</sys_name>
+            <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+            <sys_update_name>sys_ui_list_sys_db_object_4344f6f5bf1320001875647fcf0739ad_null</sys_update_name>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2017-03-05 23:59:41</sys_updated_on>
+            <sys_user display_value="Jon Crane">4867ad4ddb5d320015f2de01ce961924</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

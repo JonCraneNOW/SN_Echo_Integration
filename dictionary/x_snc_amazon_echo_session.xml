@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Session" max_length="40" name="x_snc_amazon_echo_session" type="collection"/>
+</database>

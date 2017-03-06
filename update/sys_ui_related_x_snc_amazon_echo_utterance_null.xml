@@ -3,7 +3,7 @@
     <sys_ui_related sys_domain="global" table="x_snc_amazon_echo_utterance" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Intent - Default view" name="x_snc_amazon_echo_utterance" related_list="NULL" sys_domain="global" view="Default view">983fb01d13439600d0143d622244b0d8</list_id>
+            <list_id display_value="IntentOld - Default view" name="x_snc_amazon_echo_utterance" related_list="NULL" sys_domain="global" view="Default view">983fb01d13439600d0143d622244b0d8</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_snc_amazon_echo_utterance.next</related_list>
@@ -16,7 +16,7 @@
             <sys_updated_on>2016-04-26 18:37:14</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>Intent - Default view</calculated_name>
+            <calculated_name>IntentOld - Default view</calculated_name>
             <filter/>
             <name>x_snc_amazon_echo_utterance</name>
             <order_by/>

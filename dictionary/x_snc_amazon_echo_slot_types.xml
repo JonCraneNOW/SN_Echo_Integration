@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Slot Types" max_length="40" name="x_snc_amazon_echo_slot_types" type="collection">
+        <element display="true" label="Slot type" max_length="40" name="slot_type" type="string"/>
+        <element choice="1" default="Built-in" label="Source" max_length="40" name="source" type="choice">
+            <choice>
+                <element label="Built-in" sequence="0" value="Built-in"/>
+                <element label="Custom" sequence="1" value="Custom"/>
+            </choice>
+        </element>
+        <element label="Values" max_length="2000" name="values" type="string"/>
+    </element>
+</database>

@@ -15,61 +15,58 @@ EchoRequest.prototype = {
 		this.REQUEST_TYPE = request.type;
 		this.intent_slots = {};
 		this.session_attributes = {};
-		
+
 		this.response = '';
 	},
-	
+
 	process: function() {
 		var ir = this.getIntentRecord();
-		
-		if (!ir){
+
+		if (!ir)
 			return;
-		}
-		
+
 		this.handleIntent(ir);
-		
 	},
-	
+
 	getIntentRecord: function() {
 		//If launch request, get the Open record, or else find the intent record
-		
 		if (this.REQUEST_TYPE == 'LaunchRequest'){
 			keyword = 'LaunchRequest';
 		} else {
 			keyword = this.request.intent.name;
 			this.intent_slots = this.request.intent.slots;
-			
+
 			if (this.session.attributes) {
 				this.session_attributes = this.session.attributes;
 			}
 		}
-		
-		var ir = new GlideRecord('x_snc_amazon_echo_utterance');
+
+		var ir = new GlideRecord('x_snc_amazon_echo_intent');
 		if (ir.get('keyword', keyword)){
 			return ir;
 		} else {
 			this.setResponse("Something went wrong. Could not find matching intent record in Intents table");
 		}
-		
+
 		return;
 	},
-	
+
 	handleIntent: function(intent){
 		var evaluator = new GlideScopedEvaluator();
 		evaluator.putVariable('content', this.intent_slots);
 		evaluator.putVariable('attributes', this.session_attributes);
 		evaluator.putVariable('result', null);
 		evaluator.evaluateScript(intent, 'script', null);
-		var res = evaluator.getVariable('result')
-		
+		var res = evaluator.getVariable('result');
+
 		this.setResponse(evaluator.getVariable('result'));
 	},
-	
+
 	setResponse: function(response) {
 		this.response = response;
 		return;
 	},
-	
+
 	type: 'EchoRequest'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -77,7 +74,7 @@ EchoRequest.prototype = {
         <sys_created_on>2016-04-15 17:29:03</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>b90604bd13fe9200d0143d622244b067</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>EchoRequest</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy>read</sys_policy>
@@ -85,6 +82,6 @@ EchoRequest.prototype = {
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_script_include_b90604bd13fe9200d0143d622244b067</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2016-04-18 02:29:34</sys_updated_on>
+        <sys_updated_on>2017-03-06 06:12:58</sys_updated_on>
     </sys_script_include>
 </record_update>

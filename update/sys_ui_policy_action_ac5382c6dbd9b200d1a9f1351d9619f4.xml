@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>slot_name_3</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-06 00:02:54</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ac5382c6dbd9b200d1a9f1351d9619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>slot_name_3</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_ui_policy_action_ac5382c6dbd9b200d1a9f1351d9619f4</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-06 00:02:54</sys_updated_on>
+        <table>x_snc_amazon_echo_utterance</table>
+        <ui_policy display_value="Show 3nd Slot">b64342c6dbd9b200d1a9f1351d9619f3</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

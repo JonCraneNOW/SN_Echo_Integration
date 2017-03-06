@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_amazon_echo.EchoSkillDataGenerator</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>EchoSkillDataGenerator</name>
+        <script><![CDATA[var EchoSkillDataGenerator = Class.create();
+EchoSkillDataGenerator.prototype = {
+	initialize: function() {
+	},
+
+	generateIntentSchema : function() {
+		var schema = {};
+		schema.intents = [];
+
+		var intent = new GlideRecord('x_snc_amazon_echo_intent');
+		intent.addQuery('active', 'true');
+		intent.query();
+
+		while (intent.next()){
+			var currentIntent = {
+				intent : intent.keyword + ''
+			};
+
+			var slots = this._setSlotArray(intent);
+			if (slots.length != 0)
+				currentIntent.slots = slots;
+
+			schema.intents.push(currentIntent);
+		}
+
+		var s = JSON.stringify(schema, null, 4);
+		return s;
+	},
+
+	generateUtterances : function() {
+		var utterances = "";
+		var tempKeyword = "";
+
+		var phrase = new GlideRecord('x_snc_amazon_echo_phrases');
+		phrase.addQuery('active', 'true');
+		phrase.orderByDesc('intent');
+		phrase.query();
+		
+		while (phrase.next()){
+			if (tempKeyword != "" && tempKeyword != phrase.intent.keyword)
+				utterances += "\n";
+			
+			utterances += phrase.intent.keyword +  " " + phrase.getDisplayValue() + "\n";
+			tempKeyword = phrase.intent.keyword;
+		}
+		
+		return utterances;
+	},
+
+	_setSlotArray : function(current){
+		var tempSlots = [];
+
+		if (current.slot_name_1 != '' && current.slot_type_1 != ''){
+			tempSlots.push({
+				"name" : current.slot_name_1 + '',
+				"type" : current.slot_type_1.getDisplayValue() + ''
+			});
+		}
+
+		if (current.slot_name_2 != '' && current.slot_type_2 != ''){
+			tempSlots.push({
+				"name" : current.slot_name_2 + '',
+				"type" : current.slot_type_2.getDisplayValue() + ''
+			});
+		}
+
+		if (current.slot_name_3 != '' && current.slot_type_3 != ''){
+			tempSlots.push({
+				"name" : current.slot_name_3 + '',
+				"type" : current.slot_type_3.getDisplayValue() + ''
+			});
+		}
+
+		return tempSlots;
+	},
+
+	type: 'EchoSkillDataGenerator'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-06 00:30:27</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3338864adbd9b200d1a9f1351d9619c0</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>EchoSkillDataGenerator</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_script_include_3338864adbd9b200d1a9f1351d9619c0</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-06 05:47:24</sys_updated_on>
+    </sys_script_include>
+</record_update>

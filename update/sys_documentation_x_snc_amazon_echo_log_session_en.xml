@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="session" label="Session" language="en" table="x_snc_amazon_echo_log">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>session</element>
+            <help/>
+            <hint/>
+            <label>Session</label>
+            <language>en</language>
+            <name>x_snc_amazon_echo_log</name>
+            <plural>Sessions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2017-03-06 06:01:07</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>a1559b0edb9db200d1a9f1351d9619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Session</sys_name>
+            <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_amazon_echo_log_session_en</sys_update_name>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2017-03-06 06:01:07</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

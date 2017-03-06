@@ -2,8 +2,12 @@
 <database>
     <element label="Log" max_length="40" name="x_snc_amazon_echo_log" type="collection">
         <element label="Attributes" max_length="1000" name="attributes" type="string"/>
-        <element label="Intent" max_length="32" name="intent" reference="x_snc_amazon_echo_utterance" type="reference"/>
+        <element label="Intent" max_length="32" name="intent" reference="x_snc_amazon_echo_intent" type="reference"/>
+        <element label="Session" max_length="200" name="session" reference="x_snc_amazon_echo_session" type="reference"/>
         <element label="Slots" max_length="1000" name="slots" type="string"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice/>
+        </element>
         <index name="index">
             <element name="intent"/>
         </index>

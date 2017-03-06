@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[var copyTextareaBtn = document.querySelector('.js-textareacopybtn');
+
+copyTextareaBtn.addEventListener('click', function(event) {
+	var copyTextarea = document.querySelector('.js-copytextarea');
+	copyTextarea.select();
+
+	try {
+		var successful = document.execCommand('copy');
+		var msg = successful ? 'successful' : 'unsuccessful';
+		console.log('Copying text command was ' + msg);
+	} catch (err) {
+		console.log('Oops, unable to copy');
+	}
+});
+
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_amazon_echo_generate_intent_schema.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:evaluate>
+		var schema = new x_snc_amazon_echo.EchoSkillDataGenerator().generateIntentSchema();
+	</g:evaluate>
+	Copy and paste the Intent Schema below into your Amazon Alexa skill kit. See the below example:<br />
+	<div>
+		<img src="IntentSchema.png" width="700"/>
+	</div>
+	<br />
+
+	<textarea style="height:300px;" class="form-control js-copytextarea" rows="15">
+		$[schema]
+	</textarea>
+
+	<br />
+
+	<div style="float:right;">
+		<button class="btn-primary js-textareacopybtn" onClick="showCopiedText()">Copy to Clipboard</button>
+	</div>
+</j:jelly>]]></html>
+        <name>generate_intent_schema</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-06 01:51:19</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>417bdacedb1db200d1a9f1351d9619ec</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>generate_intent_schema</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_ui_page_417bdacedb1db200d1a9f1351d9619ec</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-06 04:41:45</sys_updated_on>
+    </sys_ui_page>
+</record_update>

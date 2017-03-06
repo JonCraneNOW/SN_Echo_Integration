@@ -2,7 +2,7 @@
 <record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Log">b9e15c5113439600d0143d622244b047</application>
+        <application display_value="Amazon Echo">80f504bd13fe9200d0143d622244b008</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -15,7 +15,7 @@
         <mobile_title>Logs</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_snc_amazon_echo_log</name>
-        <order/>
+        <order>9999</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f9e15c5113439600d0143d622244b048</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Logs</sys_name>
         <sys_overrides/>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_app_module_f9e15c5113439600d0143d622244b048</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2016-04-26 15:19:22</sys_updated_on>
+        <sys_updated_on>2017-03-06 04:46:51</sys_updated_on>
         <timeline_page/>
         <title>Logs</title>
         <uncancelable>false</uncancelable>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Intent" max_length="40" name="x_snc_amazon_echo_intent" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Intent keyword" max_length="40" name="keyword" type="string"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element label="Next" max_length="4000" name="next_intent" reference="x_snc_amazon_echo_intent" type="glide_list"/>
+        <element default="(function(content, attributes, erb){&#10;&#9;/*&#10;&#9;erb.setOutputSpeech(&quot;PlainText/SSML&quot;, &quot;Text goes here&quot;, &quot;SSML goes here&quot;);&#10;&#9;erb.setReprompt(&quot;PlainText/SSML&quot;, &quot;Text goes here&quot;, &quot;SSML goes here&quot;);&#10;&#9;erb.setAttributes(attrObj); = Object of session attributes&#10;&#9;erb.setEnd(false); = Should this end the session?&#10;&#9;&#10;&#9;result = erb.getResponse(); = result must be set to the Response object&#10;&#9;*/&#10;&#9;&#10;})(content, attributes, new EchoResponseBuilder());" label="Script" max_length="8000" name="script" type="script"/>
+        <element label="Slot name" max_length="40" name="slot_name_1" type="string"/>
+        <element label="Slot name" max_length="40" name="slot_name_2" type="string"/>
+        <element label="Slot name" max_length="40" name="slot_name_3" type="string"/>
+        <element label="Slot type" max_length="32" name="slot_type_1" reference="x_snc_amazon_echo_slot_types" type="reference"/>
+        <element label="Slot type" max_length="32" name="slot_type_2" reference="x_snc_amazon_echo_slot_types" type="reference"/>
+        <element label="Slot type" max_length="32" name="slot_type_3" reference="x_snc_amazon_echo_slot_types" type="reference"/>
+        <index name="index">
+            <element name="slot_type_1"/>
+        </index>
+        <index name="index2">
+            <element name="slot_type_2"/>
+        </index>
+        <index name="index3">
+            <element name="slot_type_3"/>
+        </index>
+    </element>
+</database>
