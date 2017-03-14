@@ -15,7 +15,7 @@
         <mobile_title>Intents</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name>x_snc_amazon_echo_intent</name>
-        <order>1050</order>
+        <order>100</order>
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2cea62c6db5db200d1a9f1351d961943</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Intents</sys_name>
         <sys_overrides/>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_app_module_2cea62c6db5db200d1a9f1351d961943</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-06 04:47:42</sys_updated_on>
+        <sys_updated_on>2017-03-06 06:23:45</sys_updated_on>
         <timeline_page/>
         <title>Intents</title>
         <uncancelable>false</uncancelable>

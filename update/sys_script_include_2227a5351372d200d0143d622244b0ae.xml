@@ -12,25 +12,26 @@ EchoResponseBuilder.prototype = {
 	initialize: function() {
 		this.response = {};
 		this.response.response = {};
-		
+		this.response.version = '1;0';
+
 	},
-	
+
 	setAttributes: function(attrObj) {
 		this.response.sessionAttributes = attrObj;
 		return;
 	},
-	
+
 	setOutputSpeech: function(type, text, ssml){
 		var o = {};
 		o.type = type;
 		o.text = text;
 		o.ssml = ssml;
-		
+
 		this.response.response.outputSpeech = o;
 		return;
-		
+
 	},
-	
+
 	setCard: function(type, title, content, text, imageObj){
 		var c = {};
 		c.type = type;
@@ -38,37 +39,31 @@ EchoResponseBuilder.prototype = {
 		c.content = content;
 		c.image.smallImageUrl = imageObj.small;
 		c.image.largeImageUrl = imageObj.large;
-		
+
 		this.response.response.card = c;
 		return;
-		
+
 	},
-	
+
 	setReprompt: function(type, text, ssml){
 		var r = {};
 		r.outputSpeech = {};
 		r.outputSpeech.ssml = ssml;
 		r.outputSpeech.type = type;
 		r.outputSpeech.text = text;
-		
+
 		this.response.response.reprompt = r;
 		return;
 	},
-	
+
 	setEnd: function(endSession){
 		this.response.response.shouldEndSession = endSession;
 	},
-	
+
 	getResponse: function() {
-		this.response.version = '1;0';
-		
-		var r = this.response;
-		var j = new global.JSON();
-		var str = j.encode(r);
-		
 		return this.response;
 	},
-	
+
 	type: 'EchoResponseBuilder'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -76,7 +71,7 @@ EchoResponseBuilder.prototype = {
         <sys_created_on>2016-04-16 00:36:38</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>2227a5351372d200d0143d622244b0ae</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>EchoResponseBuilder</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy>read</sys_policy>
@@ -84,6 +79,6 @@ EchoResponseBuilder.prototype = {
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_script_include_2227a5351372d200d0143d622244b0ae</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2016-04-20 18:09:53</sys_updated_on>
+        <sys_updated_on>2017-03-13 22:40:08</sys_updated_on>
     </sys_script_include>
 </record_update>

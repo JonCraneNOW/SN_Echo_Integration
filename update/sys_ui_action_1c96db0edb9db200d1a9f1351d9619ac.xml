@@ -12,16 +12,16 @@
         <form_link>false</form_link>
         <hint/>
         <list_action>true</list_action>
-        <list_banner_button>true</list_banner_button>
-        <list_button>false</list_button>
-        <list_choice>false</list_choice>
+        <list_banner_button>false</list_banner_button>
+        <list_button>true</list_button>
+        <list_choice>true</list_choice>
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <name>Generate Utterances</name>
-        <onclick>showIntentSchema()</onclick>
-        <order>100</order>
-        <script><![CDATA[function showIntentSchema() {
+        <onclick>showUtterances()</onclick>
+        <order>999</order>
+        <script><![CDATA[function showUtterances() {
 	var dialogClass = GlideModal ? GlideModal : GlideDialogWindow;
 	var dd = new dialogClass("x_snc_amazon_echo_generate_utterances");
 	dd.setTitle("Sample utterances");
@@ -40,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1c96db0edb9db200d1a9f1351d9619ac</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Generate Utterances</sys_name>
         <sys_overrides/>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
@@ -49,7 +49,7 @@
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_ui_action_1c96db0edb9db200d1a9f1351d9619ac</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-06 06:06:30</sys_updated_on>
+        <sys_updated_on>2017-03-06 06:26:10</sys_updated_on>
         <table>x_snc_amazon_echo_intent</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

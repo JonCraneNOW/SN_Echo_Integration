@@ -9,6 +9,7 @@
         <http_method>POST</http_method>
         <name>post</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	//See request and session objects here: https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference
 	var req = request.body.data.request;
 	var ses = request.body.data.session;
 	
@@ -37,7 +38,7 @@
         <sys_created_on>2016-04-15 22:28:16</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>507a897d1332d200d0143d622244b028</sys_id>
-        <sys_mod_count>85</sys_mod_count>
+        <sys_mod_count>88</sys_mod_count>
         <sys_name>post</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy/>
@@ -45,7 +46,7 @@
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_ws_operation_507a897d1332d200d0143d622244b028</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2016-04-18 02:27:54</sys_updated_on>
+        <sys_updated_on>2017-03-13 23:12:08</sys_updated_on>
         <web_service_definition display_value="Amazon Echo">ff4d694d13b69200d0143d622244b019</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

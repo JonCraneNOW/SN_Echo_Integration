@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_amazon_echo.EchoLog</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>EchoLog</name>
+        <script><![CDATA[var EchoLog = Class.create();
+EchoLog.prototype = {
+	initialize: function(session, request, response) {
+		this.session = session;
+		this.request = request;
+		this.response = response;
+
+		this.sessionRec = this.getSession(this.session);
+	},
+
+	log : function() {
+
+		var log = new GlideRecord('x_snc_amazon_echo_log');
+		log.initialize();
+		log.session = this.sessionRec.sys_id;
+		
+		//Create two log entries. One for request and one for response. Each call to this class will have both.
+		
+		log.insert();
+	},
+
+	getSession : function(s) {
+		//Get session record if exists. Create if it doesn't. Returns session GlideRecord
+		var sid = s.sessionId.substr(s.sessionId.indexOf(".") + 1);
+
+		var session = new GlideRecord('x_snc_amazon_echo_session');
+		if (session.get('session_id', sid))
+			return session;
+		else {
+			session.initialize();
+			session.session_id = sid;
+			var sessionRec = session.insert();
+			session.get(sessionRec);
+			return session;
+		}
+	},
+
+	type: 'EchoLog'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-13 22:19:11</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>b248b2a8db61f600d1a9f1351d9619bb</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>EchoLog</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_script_include_b248b2a8db61f600d1a9f1351d9619bb</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-14 00:19:51</sys_updated_on>
+    </sys_script_include>
+</record_update>
