@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <format>png</format>
+        <height>60</height>
+        <image/>
+        <name>echo-project.png</name>
+        <size_bytes>1017</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-17 00:06:05</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>b98d26eddb2d3a00d1a9f1351d9619f7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>echo-project.png</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>db_image_b98d26eddb2d3a00d1a9f1351d9619f7</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-17 00:21:31</sys_updated_on>
+        <thumbnail/>
+        <width>70</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <image_height>60</image_height>
+        <image_width>70</image_width>
+        <size_bytes>1017</size_bytes>
+        <size_compressed>1031</size_compressed>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-17 00:21:31</sys_created_on>
+        <sys_id>5a11f2e1db6d3a00d1a9f1351d96193c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-17 00:21:31</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>b98d26eddb2d3a00d1a9f1351d9619f7</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="5a11f2e1db6d3a00d1a9f1351d96193c">5a11f2e1db6d3a00d1a9f1351d96193c</sys_attachment>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-17 00:21:31</sys_created_on>
+        <sys_id>9a11f2e1db6d3a00d1a9f1351d96193c</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>6wzwc+flkuJiYGDg9fRwCQLSbkBsw8EGJG9PP6MMpBiLg9ydGNadk3kJ5HAWeEQWMzAIlYAw4700+QoGBuZ5ni6OIRWMb2f7Zgg7ihwX3t/V9aNx0dHzSaEXdqvrBjnaVAR/eHGwe5Eci/fSqpXiS52WdrDy7xWxeX1wckUHuyZX1YcgERZ+KYGj+dq+UY/fH525qXHPG7W7uWo3Kz+cz7l37vrvt2dSNp1MMzJdE6Il6y6cwXU0t37FB85XKy+yfve7+LBxh6fGV9GP8sW9Dtui2l+80PszOWOj5f/JX3Zb9mlHurqu9k2V99i96WaO4bpTwivZDf42rr59vDC04XNmzCuX7UxvZeb41xZOj10SsuPqD+4lh2NOTpq0PnH7ys9xC5hupx24useZt2eukyvTDN8N1Uz3ZuVe3peftaoxM2t5TMad5sB1TkcXnXLa0VOjfjF1y/Upnp8mO92KT7o1UfP3dRn9EKW3tS6WJoc2fZy0Jac4oaGI4bzFq1/1WqXrmTIFLK6rfDKSWCDz9AfjK4HlG9cvOXj04q/bmlOXpuhuWhyW9Jr9XACbhvRF8ZTclma/kxPZlK89fSHyq+1Iivo93YS8E9bJhzMbAnXdHr3fKOCRzz3D8/EM1dj4tQFRNUfmG+vcOyGzuTt33s6vlroCUyziJf+bMSaL3ymLzxAVE32X+Xmd84GK1U4HmlcyucbI9bAvFgi4U3ekwoCL8ehbd9K4TGo/nCdPOuprXv45/NLmpaXf1h3g/b9SIzWq6AjDU6uDf50+ZWfa/vK9uTqXu+0Anzun38nLq39o31lrNdWt8xHTqmqtwGd5rIxve38+9Z20PWrelh+JBZc/ZZw0TVPUm7I5uFN7OxMDc0Zwj8KT69cM7WbGtVx9qSNhVScVy8m9oPHz3SmWQmHnUg3Ov6yRW8vJvajvs/GTuR2T7kca8HxPZ9lg6SXg+eRj93qnqzcFlf+mMt5z2OT3slo5L7LmvqGU8/+X73SAwa/U4b7inq+Ma9Yt2XPz1s9snqznv/TtF/08jUPJ3XtaZm5WbuvrXyyv8a72zGEDjaJ7kQZpsjvkVTtUPu2wmTqpw7xorlxPk9eBG/Vap5jFMs1PL1BIuCctNbfG5djOv3muJ751zt7TMHFv0wybxLJtNVMOibMdtTv0znTh85Tynewnm1mTLr9wubVD4LPfF6nI2/nyp18yHwtg6KjZPLV9Vgr33XNqH987FEkf+udcN2XtoZ1GEnOMivQmnrhbnv7d7NL5ltyeX+cZ0tL4ekw45txVEZ8oMGXt5tilljnek/Unz78QrKL8dGPvJ3ndKjnRpOTqamD2ZfB09XNZ55TQBADF43Z8+QMAAA==</data>
+        <length>1364</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="5a11f2e1db6d3a00d1a9f1351d96193c">5a11f2e1db6d3a00d1a9f1351d96193c</sys_attachment>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-17 00:21:31</sys_created_on>
+        <sys_id>1e11f2e1db6d3a00d1a9f1351d96193c</sys_id>
+    </sys_attachment_doc>
+</record_update>

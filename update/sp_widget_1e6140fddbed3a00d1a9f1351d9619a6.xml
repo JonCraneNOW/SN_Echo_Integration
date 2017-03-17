@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function() {
+	/* widget controller */
+	var c = this;
+	$('.carousel').carousel(0)
+	$('.carousel').carousel('pause')
+	
+	
+	c.activeNav = 0;
+
+	c.setActiveNav = function(n) {
+		c.activeNav = n;
+		$('.carousel').carousel(n)
+		$('.carousel').carousel('pause')
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>echo-carousel</id>
+        <internal>false</internal>
+        <link/>
+        <name>Echo Showcase - Detail Carousel</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-17 06:12:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1e6140fddbed3a00d1a9f1351d9619a6</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Echo Showcase - Detail Carousel</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sp_widget_1e6140fddbed3a00d1a9f1351d9619a6</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-17 06:44:08</sys_updated_on>
+        <template><![CDATA[<div>
+  <div class="row">
+    <div ng-click="c.setActiveNav(0)"
+         class="carousel-nav col-md-4"
+         ng-class="{ 'active-nav': c.activeNav == 0}"
+         >
+      How does it work?
+    </div>
+    <div ng-click="c.setActiveNav(1)"
+         class="carousel-nav col-md-4"
+         ng-class="{ 'active-nav': c.activeNav == 1}"
+         >
+      What else can it do?
+    </div>
+    <div ng-click="c.setActiveNav(2)" 
+         class="carousel-nav col-md-4"
+         ng-class="{ 'active-nav': c.activeNav == 2}"
+         >
+      Where do I get it?!
+    </div>
+  </div>
+
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        First slide
+      </div>
+
+      <div class="item">
+        Second
+      </div>
+
+      <div class="item">
+        Third
+      </div>
+    </div>
+  </div>]]></template>
+    </sp_widget>
+</record_update>

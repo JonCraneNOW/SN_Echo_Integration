@@ -2,9 +2,13 @@
 <database>
     <element label="Log" max_length="40" name="x_snc_amazon_echo_log" type="collection">
         <element label="Attributes" max_length="1000" name="attributes" type="string"/>
+        <element label="Content" max_length="2000" name="content" type="string"/>
+        <element label="Ends session" max_length="40" name="ends_session" type="boolean"/>
         <element label="Intent" max_length="32" name="intent" reference="x_snc_amazon_echo_intent" type="reference"/>
+        <element label="In response to" max_length="32" name="in_response_to" reference="x_snc_amazon_echo_log" type="reference"/>
         <element label="Session" max_length="200" name="session" reference="x_snc_amazon_echo_session" reference_cascade_rule="delete" type="reference"/>
         <element label="Slots" max_length="1000" name="slots" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Spoken phrase" max_length="500" name="spoken_phrase" type="string"/>
         <element choice="1" label="Type" max_length="40" name="type" type="choice">
             <choice>
                 <element label="Inbound" sequence="0" value="Inbound"/>
@@ -13,6 +17,9 @@
         </element>
         <index name="index">
             <element name="intent"/>
+        </index>
+        <index name="index2">
+            <element name="in_response_to"/>
         </index>
     </element>
 </database>

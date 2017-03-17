@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css>body {
+  background: #fff; 
+  font-family: Omnes-Light;
+}</css>
+        <id>echo_home</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-16 22:40:41</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>06f99625db2d3a00d1a9f1351d961915</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>echo_home</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sp_page_06f99625db2d3a00d1a9f1351d961915</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-17 01:23:22</sys_updated_on>
+        <title>Home</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=06f99625db2d3a00d1a9f1351d961915"/>
+</record_update>

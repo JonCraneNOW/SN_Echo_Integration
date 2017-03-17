@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>.echo-top-content {&#13;
+  color: #fff; &#13;
+}&#13;
+&#13;
+.content-box {&#13;
+  background: rgba(0, 0, 0, 0.23);&#13;
+  margin: 10px;&#13;
+  width: 90%;&#13;
+  height: 460px;&#13;
+  color: #fff;&#13;
+}&#13;
+&#13;
+.instructions {&#13;
+  font-size: large;&#13;
+}&#13;
+&#13;
+.header {&#13;
+  text-align: center;&#13;
+  font-size: xx-large;&#13;
+  padding-bottom: 10px;&#13;
+}&#13;
+&#13;
+.subheader {&#13;
+  text-align: center;&#13;
+  padding: 20px;&#13;
+}&#13;
+&#13;
+.intent {&#13;
+  width: 100%;&#13;
+  height: 128px;&#13;
+}&#13;
+&#13;
+.icon-row {&#13;
+  padding-top: 10px;&#13;
+  padding-bottom: 10px;&#13;
+}&#13;
+&#13;
+.icon-box {&#13;
+  height: 42px;&#13;
+  display: inline-block;&#13;
+  padding-left: 10px;&#13;
+}&#13;
+&#13;
+.icon-text {&#13;
+  text-align: left; &#13;
+  font-style: oblique;&#13;
+  display: inline-block;&#13;
+  width: 260px;&#13;
+  font-size: 15px;&#13;
+  vertical-align: middle;&#13;
+  padding-left: 10px;&#13;
+  word-wrap: break-word;&#13;
+}&#13;
+&#13;
+.left {&#13;
+  float: left;&#13;
+}&#13;
+&#13;
+.right {&#13;
+  float: right; &#13;
+}&#13;
+&#13;
+.center {&#13;
+  margin: auto;&#13;
+  width: 100%;&#13;
+  text-align: center;&#13;
+}&#13;
+&#13;
+&#13;
+/* Conversation bubble stuff */&#13;
+&#13;
+.conversations {&#13;
+  &#13;
+}&#13;
+&#13;
+.talk-bubble {&#13;
+  margin-left: 10px;&#13;
+  margin-right: 30px;&#13;
+  display: inline-block;&#13;
+  position: relative;&#13;
+  /* width: 200px; */&#13;
+  height: auto;&#13;
+}&#13;
+&#13;
+.border{&#13;
+  border: 8px solid #666;&#13;
+}&#13;
+&#13;
+.outbound {&#13;
+  background: rgb(43, 110, 175);&#13;
+}&#13;
+&#13;
+.inbound {&#13;
+  background: #E4151A;&#13;
+}&#13;
+&#13;
+.round{&#13;
+  border-radius: 5px;&#13;
+  -webkit-border-radius: 5px;&#13;
+  -moz-border-radius: 5px;&#13;
+&#13;
+}&#13;
+&#13;
+.tri-right.border.left-in:before {&#13;
+  content: ' ';&#13;
+  position: absolute;&#13;
+  width: 0;&#13;
+  height: 0;&#13;
+  left: -10px;&#13;
+  right: auto;&#13;
+  top: 60%;&#13;
+  bottom: auto;&#13;
+  border: 20px solid;&#13;
+  border-color: #666 #666 transparent transparent;&#13;
+}&#13;
+.tri-right.left-in:after{&#13;
+  content: ' ';&#13;
+  position: absolute;&#13;
+  width: 0;&#13;
+  height: 0;&#13;
+  left: -20px;&#13;
+  right: auto;&#13;
+  top: 10%;&#13;
+  bottom: auto;&#13;
+  border: 12px solid;&#13;
+  border-color: #E4151A #E4151A transparent transparent&#13;
+}&#13;
+&#13;
+.tri-right.border.right-in:before {&#13;
+  content: ' ';&#13;
+  position: absolute;&#13;
+  width: 0;&#13;
+  height: 0;&#13;
+  left: auto;&#13;
+  right: -40px;&#13;
+  top: 30px;&#13;
+  bottom: auto;&#13;
+  border: 20px solid;&#13;
+  border-color: #666 transparent transparent #666;&#13;
+}&#13;
+.tri-right.right-in:after{&#13;
+  content: ' ';&#13;
+  position: absolute;&#13;
+  width: 0;&#13;
+  height: 0;&#13;
+  left: auto;&#13;
+  right: -20px;&#13;
+  top: 10%;&#13;
+  bottom: auto;&#13;
+  border: 12px solid;&#13;
+  border-color: rgb(43, 110, 175) transparent transparent rgb(43, 110, 175);&#13;
+}&#13;
+&#13;
+/* talk bubble contents */&#13;
+.talktext{&#13;
+  padding: .4em;&#13;
+  text-align: left;&#13;
+  /* line-height: 1.5em; */&#13;
+}&#13;
+.talktext p{&#13;
+  -webkit-margin-before: 0em;&#13;
+  -webkit-margin-after: 0em;&#13;
+}</css>
+        <name>echo-showcase</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-16 22:51:35</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ef7c5e65db2d3a00d1a9f1351d9619a4</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>echo-showcase</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sp_css_ef7c5e65db2d3a00d1a9f1351d9619a4</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-17 05:56:33</sys_updated_on>
+    </sp_css>
+</record_update>

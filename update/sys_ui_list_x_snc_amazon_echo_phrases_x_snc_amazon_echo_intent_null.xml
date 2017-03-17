@@ -4,47 +4,62 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>phrase</element>
-            <list_id display_value="x_snc_amazon_echo_phrases" element="NULL" name="x_snc_amazon_echo_phrases" parent="x_snc_amazon_echo_intent" relationship="NULL" sys_domain="global" view="Default view">9e674786db9db200d1a9f1351d9619f6</list_id>
+            <list_id display_value="x_snc_amazon_echo_phrases" element="NULL" name="x_snc_amazon_echo_phrases" parent="x_snc_amazon_echo_intent" relationship="NULL" sys_domain="global" view="Default view">2b68296ddba93a00d1a9f1351d96194e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 05:00:16</sys_created_on>
-            <sys_id>16674786db9db200d1a9f1351d9619f7</sys_id>
+            <sys_created_on>2017-03-16 19:04:01</sys_created_on>
+            <sys_id>af68296ddba93a00d1a9f1351d96194e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 05:00:16</sys_updated_on>
+            <sys_updated_on>2017-03-16 19:04:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>active</element>
-            <list_id display_value="x_snc_amazon_echo_phrases" element="NULL" name="x_snc_amazon_echo_phrases" parent="x_snc_amazon_echo_intent" relationship="NULL" sys_domain="global" view="Default view">9e674786db9db200d1a9f1351d9619f6</list_id>
+            <list_id display_value="x_snc_amazon_echo_phrases" element="NULL" name="x_snc_amazon_echo_phrases" parent="x_snc_amazon_echo_intent" relationship="NULL" sys_domain="global" view="Default view">2b68296ddba93a00d1a9f1351d96194e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 05:00:16</sys_created_on>
-            <sys_id>96674786db9db200d1a9f1351d9619f7</sys_id>
+            <sys_created_on>2017-03-16 19:04:01</sys_created_on>
+            <sys_id>2368296ddba93a00d1a9f1351d96194f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 05:00:16</sys_updated_on>
+            <sys_updated_on>2017-03-16 19:04:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>intent</element>
-            <list_id display_value="x_snc_amazon_echo_phrases" element="NULL" name="x_snc_amazon_echo_phrases" parent="x_snc_amazon_echo_intent" relationship="NULL" sys_domain="global" view="Default view">9e674786db9db200d1a9f1351d9619f6</list_id>
+            <list_id display_value="x_snc_amazon_echo_phrases" element="NULL" name="x_snc_amazon_echo_phrases" parent="x_snc_amazon_echo_intent" relationship="NULL" sys_domain="global" view="Default view">2b68296ddba93a00d1a9f1351d96194e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 05:00:16</sys_created_on>
-            <sys_id>1a674786db9db200d1a9f1351d9619f7</sys_id>
+            <sys_created_on>2017-03-16 19:04:01</sys_created_on>
+            <sys_id>a368296ddba93a00d1a9f1351d96194f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 05:00:16</sys_updated_on>
+            <sys_updated_on>2017-03-16 19:04:01</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>primary</element>
+            <list_id display_value="x_snc_amazon_echo_phrases" element="NULL" name="x_snc_amazon_echo_phrases" parent="x_snc_amazon_echo_intent" relationship="NULL" sys_domain="global" view="Default view">2b68296ddba93a00d1a9f1351d96194e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2017-03-16 19:04:01</sys_created_on>
+            <sys_id>2768296ddba93a00d1a9f1351d96194f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2017-03-16 19:04:01</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -58,11 +73,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 05:00:16</sys_created_on>
+            <sys_created_on>2017-03-16 19:04:01</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>9e674786db9db200d1a9f1351d9619f6</sys_id>
+            <sys_id>2b68296ddba93a00d1a9f1351d96194e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_snc_amazon_echo_phrases</sys_name>
             <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
@@ -71,7 +86,7 @@
             <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
             <sys_update_name>sys_ui_list_x_snc_amazon_echo_phrases_x_snc_amazon_echo_intent_null</sys_update_name>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 05:00:16</sys_updated_on>
+            <sys_updated_on>2017-03-16 19:04:01</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

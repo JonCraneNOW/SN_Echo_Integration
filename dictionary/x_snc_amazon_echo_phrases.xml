@@ -4,6 +4,7 @@
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Intent" max_length="32" name="intent" reference="x_snc_amazon_echo_intent" type="reference"/>
         <element display="true" label="Phrase" max_length="400" name="phrase" type="string"/>
+        <element label="Primary" max_length="40" name="primary" type="boolean"/>
         <index name="index">
             <element name="intent"/>
         </index>

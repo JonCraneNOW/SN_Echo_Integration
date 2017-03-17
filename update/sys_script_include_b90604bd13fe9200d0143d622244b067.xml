@@ -14,7 +14,6 @@ EchoRequest.prototype = {
 		this.request = request;
 		this.session = session;
 		this.REQUEST_TYPE = request.type;
-		gs.info("request type = " + request.type)
 		this.intent_slots = {};
 		this.session_attributes = {};
 
@@ -68,7 +67,8 @@ EchoRequest.prototype = {
 
 	setResponse: function(response) {
 		this.response = response;
-		new x_snc_amazon_echo.EchoLog(this.session, this.request, this.response).log();
+		if (this.REQUEST_TYPE != 'LaunchRequest')
+			new x_snc_amazon_echo.EchoLog(this.session, this.request, this.response).log();
 
 		return;
 	},
@@ -88,7 +88,7 @@ EchoRequest.prototype = {
         <sys_created_on>2016-04-15 17:29:03</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>b90604bd13fe9200d0143d622244b067</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>EchoRequest</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy>read</sys_policy>
@@ -96,6 +96,6 @@ EchoRequest.prototype = {
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_script_include_b90604bd13fe9200d0143d622244b067</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-14 00:08:43</sys_updated_on>
+        <sys_updated_on>2017-03-17 06:49:08</sys_updated_on>
     </sys_script_include>
 </record_update>

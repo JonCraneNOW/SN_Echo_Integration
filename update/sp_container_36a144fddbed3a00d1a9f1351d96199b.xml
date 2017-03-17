@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Home - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="echo_home">06f99625db2d3a00d1a9f1351d961915</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-17 06:13:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>36a144fddbed3a00d1a9f1351d96199b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Home - Container 2</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sp_container_36a144fddbed3a00d1a9f1351d96199b</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-17 06:14:36</sys_updated_on>
+        <width>container-fluid</width>
+    </sp_container>
+</record_update>

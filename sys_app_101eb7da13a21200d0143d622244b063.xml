@@ -3,7 +3,7 @@
     <sys_app action="INSERT_OR_UPDATE">
         <active>true</active>
         <enforce_license>log</enforce_license>
-        <js_level>traditional</js_level>
+        <js_level>helsinki_es5</js_level>
         <licensable>true</licensable>
         <license_model>none</license_model>
         <logo/>
@@ -23,9 +23,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-04-05 14:33:43</sys_created_on>
         <sys_id>101eb7da13a21200d0143d622244b063</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-06 02:19:57</sys_updated_on>
+        <sys_updated_on>2017-03-15 22:18:25</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>

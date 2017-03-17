@@ -13,21 +13,34 @@ EchoLog.prototype = {
 		this.session = session;
 		this.request = request;
 		this.response = response;
-
 		this.sessionRec = this.getSession(this.session);
+		this.intent = this.getIntent(this.request.intent.name);
 	},
 
 	log : function() {
-
-		var log = new GlideRecord('x_snc_amazon_echo_log');
-		log.initialize();
-		log.session = this.sessionRec.sys_id;
-		
 		//Create two log entries. One for request and one for response. Each call to this class will have both.
-		
-		log.insert();
-	},
+		var log = new GlideRecord('x_snc_amazon_echo_log');
+		//Log request
+		log.initialize();
+		log.type = 'Inbound';
+		log.intent = this.intent.record.sys_id;
+		log.spoken_phrase = this.intent.returnPhrase;
+		log.session = this.sessionRec.sys_id;
+		log.content = JSON.stringify(this.request, null, 4);
+		var newRequest = log.insert();
 
+		//Log response
+		log.initialize();
+		log.type = 'Outbound';
+		log.session = this.sessionRec.sys_id;
+		log.spoken_phrase = this.getResponsePhrase(this.response.response.outputSpeech);
+		log.content = JSON.stringify(this.response, null, 4);
+		log.ends_session = this.response.response.shouldEndSession;
+		log.in_response_to = newRequest;
+		log.insert();		
+		return;
+	},
+	
 	getSession : function(s) {
 		//Get session record if exists. Create if it doesn't. Returns session GlideRecord
 		var sid = s.sessionId.substr(s.sessionId.indexOf(".") + 1);
@@ -44,6 +57,44 @@ EchoLog.prototype = {
 		}
 	},
 
+	getIntent : function(intent) {
+		var iObj = {};
+		
+		var i = new GlideRecord('x_snc_amazon_echo_intent');
+		if (i.get('keyword', intent)) {
+			iObj.record = i;
+			
+			//Get primary phrase and log it
+			var phrase = new GlideRecord('x_snc_amazon_echo_phrases');
+			phrase.addQuery('intent', i.sys_id);
+			phrase.addQuery('primary', 'true');
+			phrase.query();
+			
+			if (phrase.next())
+				iObj.returnPhrase = phrase.phrase + '';
+			else
+				iObj.returnPhrase = i.name + '';
+			
+			return iObj;
+		}
+
+		gs.info("EchoLog: Unable to resolve intent and attach to log.");
+		return;
+	},
+	
+	getResponsePhrase : function(speech) {
+		var type = speech.type;
+		var text = speech.text;
+		var ssml = speech.ssml;
+		
+		if (type == 'PlainText')
+			return text;
+		else if (type == 'SSML') 
+			return ssml.replace(/<(?:.|\n)*?>/gm, '');
+		else
+			return 'Whoops! Unable to parse response speech. :(';
+	},
+
 	type: 'EchoLog'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -51,7 +102,7 @@ EchoLog.prototype = {
         <sys_created_on>2017-03-13 22:19:11</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>b248b2a8db61f600d1a9f1351d9619bb</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>EchoLog</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy>read</sys_policy>
@@ -59,6 +110,6 @@ EchoLog.prototype = {
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_script_include_b248b2a8db61f600d1a9f1351d9619bb</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-14 00:19:51</sys_updated_on>
+        <sys_updated_on>2017-03-17 04:46:34</sys_updated_on>
     </sys_script_include>
 </record_update>
