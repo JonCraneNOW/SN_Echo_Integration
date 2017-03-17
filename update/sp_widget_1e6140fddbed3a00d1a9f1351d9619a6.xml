@@ -6,8 +6,6 @@
 	var c = this;
 	$('.carousel').carousel(0)
 	$('.carousel').carousel('pause')
-	
-	
 	c.activeNav = 0;
 
 	c.setActiveNav = function(n) {
@@ -38,7 +36,7 @@
         <sys_created_on>2017-03-17 06:12:25</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1e6140fddbed3a00d1a9f1351d9619a6</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>Echo Showcase - Detail Carousel</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy/>
@@ -46,7 +44,7 @@
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sp_widget_1e6140fddbed3a00d1a9f1351d9619a6</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-17 06:44:08</sys_updated_on>
+        <sys_updated_on>2017-03-17 21:28:18</sys_updated_on>
         <template><![CDATA[<div>
   <div class="row">
     <div ng-click="c.setActiveNav(0)"
@@ -70,20 +68,101 @@
   </div>
 
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        First slide
+        <div class="row padded">
+          <div class="col-md-3 max-height">
+            <div class="carousel-content-box">
+              <div class="image-box">
+                <img src="echo-carousel-ask.png" height="90px"/>
+              </div>
+              <hr>
+
+              <div class="text-box">
+                Create an Alexa Skill using the Amazon Alexa Skill Kit portal. The Alexa Skill points to an HTTP endpoint, and sends specially formatted requests and responses to and from that endpoint respectively.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3  max-height">
+            <div class="carousel-content-box">
+              <div class="image-box" style="padding:5px;">
+                <img src="echo-carousel-rest.png" height="70px"/>
+              </div>
+              <hr>
+              <div class="text-box">
+                Scripted REST APIs in the target ServiceNow instance receive the spoken command from the Alexa skill.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 max-height">
+            <div class="carousel-content-box">
+              <div class="image-box" style="padding:5px;">
+                <img src="echo-carousel-script.png" width="250" height="95"/>
+              </div>
+              <hr>
+
+              <div class="text-box">
+                The Amazon Echo application within the ServiceNow instance processes the request through the Intent table, and forms a verbal response based on the results.
+              </div>              
+
+            </div>
+          </div>
+          <div class="col-md-3 max-height">
+            <div class="carousel-content-box">
+              <div class="image-box" style="padding:5px;">
+                <img src="echo-carousel-echo-talking.png" width="38" height="90"/>              </div>
+              <hr>
+              <div class="text-box">
+                The response is sent back to the Alexa Skill Kit, and is read aloud by the Amazon Echo. Magic!
+              </div>              
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="item">
-        Second
+        <div class="row padded">
+          <div class="col-md-9 max-height carousel-text">
+            <div class="">
+              <u>The short answer:</u> Anything!<br><br>
+
+              <u>The long answer:</u> 
+              The Alexa app was built to allow easy addition of new phrases and responses from your ServiceNow instance. An Intent Schema and Utterance generator makes it easy to create new phrases and bring them to your Alexa skill.
+              <p><p>
+                A series of Intents can be defined that store how you want to handle and respond to phrases. Each Intent has a list of phrases that, when spoken, will call that Intent. The script contained within the intent is pre-formatted to send the response back to the Alexa skill.
+              <p><p>
+                This means you can easily define your own intents and phrases, and paste the content into your Alexa Skill for rapid skill deployment! Get creative!
+            </div>
+          </div>
+          <div class="col-md-3 max-height carousel-text">
+            <div class="centered-header">
+              Full list of phrases:
+            </div>
+            <ul>
+              <li>Stuff will go here</li>
+              <li>Nothing here yet..</li>
+              <li>Welp...</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="item">
-        Third
+        <div class="row padded">
+          <div class="col-md-12 mad-height">
+            <div class="centered-header">
+              Community link
+              <br>
+              Share link
+              <br>
+              Nothing interesting here yet...
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>]]></template>
