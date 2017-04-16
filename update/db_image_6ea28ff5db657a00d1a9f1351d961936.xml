@@ -29,6 +29,7 @@
         <average_image_color>#2d3747</average_image_color>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
+        <encryption_context/>
         <file_name>image</file_name>
         <image_height>90</image_height>
         <image_width>38</image_width>

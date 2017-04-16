@@ -32,7 +32,6 @@ EchoSkillDataGenerator.prototype = {
 			schema.intents.push(currentIntent);
 		}
 
-		//var s = JSON.stringify(schema, null, 4);
 		return JSON.stringify(schema, null, 4);
 	},
 
@@ -42,6 +41,7 @@ EchoSkillDataGenerator.prototype = {
 
 		var phrase = new GlideRecord('x_snc_amazon_echo_phrases');
 		phrase.addQuery('active', 'true');
+		phrase.addQuery('intent.active', 'true');
 		phrase.orderByDesc('intent');
 		phrase.query();
 		
@@ -90,7 +90,7 @@ EchoSkillDataGenerator.prototype = {
         <sys_created_on>2017-03-06 00:30:27</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>3338864adbd9b200d1a9f1351d9619c0</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name>EchoSkillDataGenerator</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy>read</sys_policy>
@@ -98,6 +98,6 @@ EchoSkillDataGenerator.prototype = {
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_script_include_3338864adbd9b200d1a9f1351d9619c0</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-16 17:46:47</sys_updated_on>
+        <sys_updated_on>2017-04-16 05:41:18</sys_updated_on>
     </sys_script_include>
 </record_update>

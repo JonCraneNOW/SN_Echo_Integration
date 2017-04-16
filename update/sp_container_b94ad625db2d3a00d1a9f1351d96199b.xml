@@ -31,6 +31,7 @@
         <average_image_color>#13181e</average_image_color>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
+        <encryption_context/>
         <file_name>background_image</file_name>
         <image_height>629</image_height>
         <image_width>1440</image_width>

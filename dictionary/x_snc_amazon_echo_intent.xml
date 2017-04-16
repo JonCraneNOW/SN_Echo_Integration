@@ -2,16 +2,31 @@
 <database>
     <element label="Intent" max_length="40" name="x_snc_amazon_echo_intent" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element hint="If an intent is always available, it can be called at any time and isn't limited to being called after another intent." label="Always available?" max_length="40" name="always_available" type="boolean"/>
+        <element label="Category" max_length="32" name="category" reference="x_snc_amazon_echo_intent_category" type="reference"/>
+        <element hint="A Fallback intent is called when no other intent can be resolved. Only one Fallback can exist." label="Fallback" max_length="40" name="fallback" type="boolean"/>
+        <element hint="This intent will end the current session. If &quot;true&quot;, the Launch phrase will need to be spoken again to execute the skill and continue the dialog." label="Intent ends session?" max_length="40" name="intent_ends_session" type="boolean"/>
         <element label="Intent keyword" max_length="40" name="keyword" type="string"/>
-        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
         <element label="Next" max_length="4000" name="next_intent" reference="x_snc_amazon_echo_intent" type="glide_list"/>
-        <element default="(function(content, attributes, erb){&#13;&#10;&#9;/*&#13;&#10;&#9;erb.setOutputSpeech(&quot;PlainText/SSML&quot;, &quot;Text goes here&quot;, &quot;SSML goes here&quot;);&#13;&#10;&#9;erb.setReprompt(&quot;PlainText/SSML&quot;, &quot;Text goes here&quot;, &quot;SSML goes here&quot;);&#13;&#10;&#9;erb.setAttributes(attrObj); = Object of session attributes&#13;&#10;&#9;erb.setEnd(false); = Should this end the session?&#13;&#10;&#9;*/&#13;&#10;&#13;&#10;&#9;result = erb.response; //Required&#13;&#10;})(content, attributes, new EchoResponseBuilder());" label="Script" max_length="8000" name="script" type="script"/>
+        <element hint="(Optional) If querying the intents and an order is needed, this field can be used." label="Order" max_length="40" name="order" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" hint="Choose either PlainText or SSML. See URL for SSML markup documentation." label="Output speech format" mandatory="true" max_length="40" name="output_speech_format" type="string">
+            <choice>
+                <element label="SSML" sequence="0" value="SSML"/>
+                <element label="PlainText" sequence="1" value="PlainText"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" hint="Choose either PlainText or SSML. See URL for SSML markup documentation." label="Reprompt speech format" max_length="40" name="reprompt_speech_format" type="string">
+            <choice/>
+        </element>
+        <element default="(function(current, content, attributes, ER, IntentUtils){&#13;&#10;&#9;/*&#13;&#10;&#9;ER.setOutputSpeech(current.output_speech_format, &quot;Text goes here&quot;, &quot;SSML goes here&quot;);&#13;&#10;&#9;ER.setReprompt(current.reprompt_speech_format, &quot;Text goes here&quot;, &quot;SSML goes here&quot;);&#13;&#10;&#9;ER.setAttributes(attrObj); = Object of session attributes&#13;&#10;&#9;ER.setEnd(current.intent_ends_session); = Should this end the session?&#13;&#10;&#9;*/&#13;&#10;&#13;&#10;&#9;result = ER.response; //Required&#13;&#10;})(current, content, attributes, new EchoResponseBuilder(), new IntentUtils());" label="Script" max_length="8000" name="script" type="script"/>
         <element label="Slot name" max_length="40" name="slot_name_1" type="string"/>
         <element label="Slot name" max_length="40" name="slot_name_2" type="string"/>
         <element label="Slot name" max_length="40" name="slot_name_3" type="string"/>
         <element label="Slot type" max_length="32" name="slot_type_1" reference="x_snc_amazon_echo_slot_types" type="reference"/>
         <element label="Slot type" max_length="32" name="slot_type_2" reference="x_snc_amazon_echo_slot_types" type="reference"/>
         <element label="Slot type" max_length="32" name="slot_type_3" reference="x_snc_amazon_echo_slot_types" type="reference"/>
+        <element hint="(Optional) Intents can be flagged as top-level to allow for reading off a list of commands, such as with a Help command." label="Top-level Intent" max_length="40" name="top_level_intent" type="boolean"/>
         <index name="index">
             <element name="slot_type_1"/>
         </index>
@@ -20,6 +35,9 @@
         </index>
         <index name="index3">
             <element name="slot_type_3"/>
+        </index>
+        <index name="index4">
+            <element name="category"/>
         </index>
     </element>
 </database>

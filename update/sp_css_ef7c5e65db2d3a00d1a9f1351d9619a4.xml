@@ -44,7 +44,7 @@
   padding-left: 10px;&#13;
 }&#13;
 &#13;
-.icon-text {&#13;
+.icon-box-text {&#13;
   text-align: left; &#13;
   font-style: oblique;&#13;
   display: inline-block;&#13;
@@ -73,7 +73,41 @@
 /* Conversation bubble stuff */&#13;
 &#13;
 .conversations {&#13;
-  &#13;
+&#13;
+}&#13;
+&#13;
+#conversation-container {&#13;
+  max-height: 400px !important;&#13;
+  overflow-y: auto !important; &#13;
+  padding-left: 10px;&#13;
+}&#13;
+&#13;
+#conversation-container::-webkit-scrollbar-track&#13;
+{&#13;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);&#13;
+  background-color: #F5F5F5;&#13;
+  border-radius: 10px;&#13;
+}&#13;
+&#13;
+#conversation-container::-webkit-scrollbar&#13;
+{&#13;
+  width: 10px;&#13;
+  background-color: #F5F5F5;&#13;
+}&#13;
+&#13;
+#conversation-container::-webkit-scrollbar-track-piece {&#13;
+  background-color: rgba(255, 255, 255, 0.8);&#13;
+}&#13;
+&#13;
+#conversation-container::-webkit-scrollbar-thumb&#13;
+{&#13;
+  border-radius: 10px;&#13;
+  background-image: -webkit-gradient(linear,&#13;
+    left bottom,&#13;
+    left top,&#13;
+    color-stop(0.44, rgb(122,153,217)),&#13;
+    color-stop(0.72, rgb(73,125,189)),&#13;
+    color-stop(0.86, rgb(28,58,148)));&#13;
 }&#13;
 &#13;
 .talk-bubble {&#13;
@@ -170,7 +204,7 @@
         <sys_created_on>2017-03-16 22:51:35</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>ef7c5e65db2d3a00d1a9f1351d9619a4</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>55</sys_mod_count>
         <sys_name>echo-showcase</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy/>
@@ -178,6 +212,6 @@
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sp_css_ef7c5e65db2d3a00d1a9f1351d9619a4</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-17 05:56:33</sys_updated_on>
+        <sys_updated_on>2017-04-14 04:41:20</sys_updated_on>
     </sp_css>
 </record_update>

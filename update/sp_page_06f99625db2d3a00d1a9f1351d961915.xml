@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
-        <css>body {&#13;
+        <css>@font-face {&#13;
+  font-family: 'OmnesLight';&#13;
+  src: url('/sys_attachment.do?sys_id=f8914686db393200d1a9f1351d961955') format('truetype'),&#13;
+    url('/sys_attachment.do?sys_id=30914a86db393200d1a9f1351d9619be') format('woff');&#13;
+}&#13;
+&#13;
+body {&#13;
   background: rgb(241, 241, 241); &#13;
-  font-family: Omnes-Light;&#13;
+  font-family: OmnesLight;&#13;
 }</css>
         <id>echo_home</id>
         <internal>false</internal>
@@ -15,7 +21,7 @@
         <sys_created_on>2017-03-16 22:40:41</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>06f99625db2d3a00d1a9f1351d961915</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>echo_home</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy/>
@@ -23,7 +29,7 @@
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sp_page_06f99625db2d3a00d1a9f1351d961915</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-17 17:44:25</sys_updated_on>
+        <sys_updated_on>2017-03-30 20:37:57</sys_updated_on>
         <title>Home</title>
     </sp_page>
     <sys_translated_text action="delete_multiple" query="documentkey=06f99625db2d3a00d1a9f1351d961915"/>

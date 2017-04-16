@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_amazon_echo.IntentUtils</api_name>
+        <client_callable>false</client_callable>
+        <description>This is a utility script passed into Intent records that can be used to for constructing the result. Custom functions can be added her to perform new actions if needed.</description>
+        <name>IntentUtils</name>
+        <script><![CDATA[var IntentUtils = Class.create();
+IntentUtils.prototype = {
+	initialize: function() {
+	},
+
+	taskNumberToSSML : function(taskGR) {
+		var ssml = "";
+		var num = new GlideRecord('sys_number');
+		if (num.get('category', taskGR.getTableName())){
+			ssml += '<say-as interpret-as="characters">' + num.prefix + '</say-as>';
+
+			var prefixLength = num.prefix.toString();
+			prefixLength = prefixLength.length;
+			var numberLength = num.maximum_digits;
+
+			ssml += '<say-as interpret-as="digits">' + taskGR.number.substring(prefixLength, numberLength + prefixLength) + '</say-as>';
+
+		} else {
+			gs.info("Unable to find number record for GR or taskGR is not a valid GlideRecord.");
+		}
+		return ssml;
+	},
+
+	formatDateTime : function(dt) {
+		var updatedArr = dt.getDisplayValue().split(" ");
+		var updatedDate = updatedArr[0];
+		var updatedTime = updatedArr[1].split(":");
+		updatedTime = updatedTime[0] + ":" + updatedTime[1];
+
+		return {
+			date : updatedDate,
+			time : updatedTime
+		};
+	},
+
+	getLastCommentOrWorkNote : function(type, gr) {
+		var notes = gr[type].getJournalEntry(1);
+		var na = notes.split("\n\n");
+		notes = na[0];
+
+		if (notes != "" && notes != null)
+			notes = notes.split("\n");
+		
+		return notes[1];
+	},
+
+
+	type: 'IntentUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-04-13 20:25:30</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>eb370a6edbcef600d1a9f1351d96199c</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>IntentUtils</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_script_include_eb370a6edbcef600d1a9f1351d96199c</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-04-16 05:19:12</sys_updated_on>
+    </sys_script_include>
+</record_update>

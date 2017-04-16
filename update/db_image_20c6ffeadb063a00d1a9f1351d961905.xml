@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format>png</format>
+        <height>50</height>
+        <image/>
+        <name>echo-security.png</name>
+        <size_bytes>845</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-04-14 04:31:16</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>20c6ffeadb063a00d1a9f1351d961905</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>echo-security.png</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>db_image_20c6ffeadb063a00d1a9f1351d961905</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-04-14 04:31:20</sys_updated_on>
+        <thumbnail/>
+        <width>44</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#ffffff</average_image_color>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>image</file_name>
+        <image_height>50</image_height>
+        <image_width>44</image_width>
+        <size_bytes>845</size_bytes>
+        <size_compressed>868</size_compressed>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-04-14 04:31:20</sys_created_on>
+        <sys_id>8bc67feadb063a00d1a9f1351d9619f5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-04-14 04:31:20</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>20c6ffeadb063a00d1a9f1351d961905</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="8bc67feadb063a00d1a9f1351d9619f5">8bc67feadb063a00d1a9f1351d9619f5</sys_attachment>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-04-14 04:31:20</sys_created_on>
+        <sys_id>cbc67feadb063a00d1a9f1351d9619f5</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>AU0DsvyJUE5HDQoaCgAAAA1JSERSAAAALAAAADIIBgAAACdYOeoAAAABc1JHQgCuzhzpAAAACXBIWXMAAAzEAAAMxAEBMMtcAAAC8klEQVRoBe2YPWgUQRTHs0kEMRoEUUQERQiIxA8wfqCtttHCTrAUxNZChDQWVmIhCLZiYxGIASGCVoKCIErELwwakTRB06hnRE3G39ubO+aOJbO59+7Mwj743czOzPvPu7ezX5N0Kc05lyBxFE7AERiA9bAIX+AtPILRJEneUf4/I9hT8AqabbG5wR8/pDzY8YiZdB2M+yCkmIWrcAw2QTf0wBYYhpvwFcTkz1yBno4EzkTb4TWI/YAR6ItNzpi1cAkqIPYAon4x3SX7maAf3oDYRxhc0iGjE5/d8B7E7kH7Mu0nkIk+wMaMeHI14bsZpkHsWi6n5Q5C+HQq79w3yl3L9W8ej8ZOmIcFONDcrzpGUC6iKRC7qBILnNG6nCo6NxE066uIHvfCM5Sr9YpVBbT6QC5cuXPsyKPbnWcQY076cbe4+f/K6RMdhlaFQeMgD5/hqAMD8gYsTzAx21PXqHm4emjw608bhes3kGuQQHNIhLGnDR2tHiC0KpVzzmwphLF4/QHKbWF7y3WE1viAv7csYuiYdw0bTqmTKgPW5S/uXWY4niPdiDLDuvzFvcsMx3OkG1G4DPfy2D0U+c+191/5Co6NjUipuyuJvCeoZTon8KI3mOtxUF9pVdkO2JcGJRnGFlZahGE8xLc3jdK554W76AoXcLiGw7PQcp1TJ+ttD/yGST40/7YsluFommGCvcAcs/AEnsFn2mQb1s78YlZfdOic9VpSTMK0VLA/oPoixr9+0XWJImYR8KeqVJpl0ZUHzW3fNqZJMRq2ASMo+8VisldW342kPiiN2JRVwFZr+CcBzYM8xsONwv0+0DlfqguTgLkTyJIa9dFMkNHzMMLxDd92x5f6Qs4XZrGGN6DzMlVr/BnjUHX7xL++hlVCYbrI8hzCss97BmQvTu7D9+EufXYvWD4Z6gwTWNsszLDJGm5bpBnCZcAZSTFtKjNsms4MsTLDGUkxbao9OOTr+Zypsq3Y1ppcIT/zr9eiL0A58w8LAJMPu8S3CgAAAABJRU5ErkJggkRhTSxNAwAA</data>
+        <length>1144</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="8bc67feadb063a00d1a9f1351d9619f5">8bc67feadb063a00d1a9f1351d9619f5</sys_attachment>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-04-14 04:31:20</sys_created_on>
+        <sys_id>4fc67feadb063a00d1a9f1351d9619f5</sys_id>
+    </sys_attachment_doc>
+</record_update>

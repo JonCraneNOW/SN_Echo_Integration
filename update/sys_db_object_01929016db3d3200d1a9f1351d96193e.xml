@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_db_object">
+    <sys_db_object action="INSERT_OR_UPDATE">
+        <access/>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>false</create_access_controls>
+        <delete_access>false</delete_access>
+        <extension_model>class</extension_model>
+        <is_extendable>false</is_extendable>
+        <label>Sh$pwd Enrollment Snapshot</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>sh$pwd_enrollment_snapshot</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>false</read_access>
+        <super_class/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-03-31 07:00:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>01929016db3d3200d1a9f1351d96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sh$pwd Enrollment Snapshot</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_db_object_01929016db3d3200d1a9f1351d96193e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-03-31 07:00:04</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role/>
+        <ws_access>false</ws_access>
+    </sys_db_object>
+</record_update>

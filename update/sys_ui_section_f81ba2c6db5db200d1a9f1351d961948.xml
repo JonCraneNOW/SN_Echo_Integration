@@ -5,13 +5,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 04:54:47</sys_created_on>
-            <sys_id>8626cb46db9db200d1a9f1351d961990</sys_id>
+            <sys_created_on>2017-04-16 06:06:57</sys_created_on>
+            <sys_id>fadfde5fdb0ef60015f2de01ce961939</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_amazon_echo_intent" sys_domain="global" view="Default view">f81ba2c6db5db200d1a9f1351d961948</sys_ui_section>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 04:54:47</sys_updated_on>
+            <sys_updated_on>2017-04-16 06:06:57</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -19,27 +19,27 @@
             <element>name</element>
             <position>1</position>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 04:54:47</sys_created_on>
-            <sys_id>0e26cb46db9db200d1a9f1351d961990</sys_id>
+            <sys_created_on>2017-04-16 06:06:57</sys_created_on>
+            <sys_id>7edfde5fdb0ef60015f2de01ce961939</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_amazon_echo_intent" sys_domain="global" view="Default view">f81ba2c6db5db200d1a9f1351d961948</sys_ui_section>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 04:54:47</sys_updated_on>
+            <sys_updated_on>2017-04-16 06:06:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>next_intent</element>
+            <element>category</element>
             <position>2</position>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 04:54:47</sys_created_on>
-            <sys_id>8e26cb46db9db200d1a9f1351d961990</sys_id>
+            <sys_created_on>2017-04-16 06:06:57</sys_created_on>
+            <sys_id>fedfde5fdb0ef60015f2de01ce961939</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_amazon_echo_intent" sys_domain="global" view="Default view">f81ba2c6db5db200d1a9f1351d961948</sys_ui_section>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 04:54:47</sys_updated_on>
+            <sys_updated_on>2017-04-16 06:06:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 04:54:47</sys_created_on>
-            <sys_id>0226cb46db9db200d1a9f1351d961991</sys_id>
+            <sys_created_on>2017-04-16 06:06:57</sys_created_on>
+            <sys_id>72dfde5fdb0ef60015f2de01ce96193a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_amazon_echo_intent" sys_domain="global" view="Default view">f81ba2c6db5db200d1a9f1351d961948</sys_ui_section>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 04:54:47</sys_updated_on>
+            <sys_updated_on>2017-04-16 06:06:57</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>active</element>
             <position>4</position>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 04:54:47</sys_created_on>
-            <sys_id>8226cb46db9db200d1a9f1351d961991</sys_id>
+            <sys_created_on>2017-04-16 06:06:57</sys_created_on>
+            <sys_id>f2dfde5fdb0ef60015f2de01ce96193a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_amazon_echo_intent" sys_domain="global" view="Default view">f81ba2c6db5db200d1a9f1351d961948</sys_ui_section>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 04:54:47</sys_updated_on>
+            <sys_updated_on>2017-04-16 06:06:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>keyword</element>
             <position>5</position>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 04:54:47</sys_created_on>
-            <sys_id>0626cb46db9db200d1a9f1351d961991</sys_id>
+            <sys_created_on>2017-04-16 06:06:57</sys_created_on>
+            <sys_id>76dfde5fdb0ef60015f2de01ce96193a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_amazon_echo_intent" sys_domain="global" view="Default view">f81ba2c6db5db200d1a9f1351d961948</sys_ui_section>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 04:54:47</sys_updated_on>
+            <sys_updated_on>2017-04-16 06:06:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -89,13 +89,13 @@
             <element>.end_split</element>
             <position>6</position>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 04:54:47</sys_created_on>
-            <sys_id>8626cb46db9db200d1a9f1351d961991</sys_id>
+            <sys_created_on>2017-04-16 06:06:57</sys_created_on>
+            <sys_id>f6dfde5fdb0ef60015f2de01ce96193a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_amazon_echo_intent" sys_domain="global" view="Default view">f81ba2c6db5db200d1a9f1351d961948</sys_ui_section>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 04:54:47</sys_updated_on>
+            <sys_updated_on>2017-04-16 06:06:57</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -103,13 +103,13 @@
             <element>script</element>
             <position>7</position>
             <sys_created_by>jc</sys_created_by>
-            <sys_created_on>2017-03-06 04:54:47</sys_created_on>
-            <sys_id>0a26cb46db9db200d1a9f1351d961991</sys_id>
+            <sys_created_on>2017-04-16 06:06:57</sys_created_on>
+            <sys_id>7adfde5fdb0ef60015f2de01ce96193a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_amazon_echo_intent" sys_domain="global" view="Default view">f81ba2c6db5db200d1a9f1351d961948</sys_ui_section>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-03-06 04:54:47</sys_updated_on>
+            <sys_updated_on>2017-04-16 06:06:57</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

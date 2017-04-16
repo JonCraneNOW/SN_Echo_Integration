@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="output_speech_format" label="Output speech format" language="en" table="x_snc_amazon_echo_intent">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>output_speech_format</element>
+            <help/>
+            <hint>Choose either PlainText or SSML. See URL for SSML markup documentation.</hint>
+            <label>Output speech format</label>
+            <language>en</language>
+            <name>x_snc_amazon_echo_intent</name>
+            <plural>Output speech formats</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2017-04-13 18:06:45</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>6dd7656adb8ef600d1a9f1351d961928</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Output speech format</sys_name>
+            <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_amazon_echo_intent_output_speech_format_en</sys_update_name>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2017-04-13 18:10:58</sys_updated_on>
+            <url>https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference</url>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -5,7 +5,8 @@
         <active>true</active>
         <api_name>x_snc_amazon_echo.EchoConversation</api_name>
         <client_callable>false</client_callable>
-        <description>Utility functions used by the Amazon Echo app</description>
+        <description>Amazon Echo App:&#13;
+Used by the Conversation widget in Service Portal</description>
         <name>EchoConversation</name>
         <script><![CDATA[var EchoConversation = Class.create();
 EchoConversation.prototype = {
@@ -34,7 +35,7 @@ EchoConversation.prototype = {
 			C.order = pointer;
 			C.inbound = log.in_response_to.spoken_phrase + '';
 			C.outbound = log.spoken_phrase + '';	
-			conversations.unshift(C);
+			conversations.push(C);
 		}
 		
 		return conversations;
@@ -47,7 +48,7 @@ EchoConversation.prototype = {
         <sys_created_on>2017-03-06 06:15:52</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>3578538edb9db200d1a9f1351d961977</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>EchoConversation</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy>read</sys_policy>
@@ -55,6 +56,6 @@ EchoConversation.prototype = {
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_script_include_3578538edb9db200d1a9f1351d961977</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-17 05:10:36</sys_updated_on>
+        <sys_updated_on>2017-04-13 04:04:36</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -32,7 +32,7 @@
         <sys_created_on>2017-03-17 03:09:11</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1677dbe5dbad3a00d1a9f1351d961986</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Echo Showcase - Conversation</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy/>
@@ -40,25 +40,27 @@
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sp_widget_1677dbe5dbad3a00d1a9f1351d961986</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-17 06:11:13</sys_updated_on>
+        <sys_updated_on>2017-04-13 03:56:42</sys_updated_on>
         <template><![CDATA[<div class="content-box ">
   <div class="header">
     Interact wth Alexa
   </div>
-  <div class="conversations" ng-repeat="conversation in c.data.conversations">
-    <div class="talk-bubble tri-right round inbound left-in">
-      <div class="talktext">
-        <p>{{ conversation.inbound }}</p>
+  <div id="conversation-container" >
+    <div class="conversations" ng-repeat="conversation in c.data.conversations">
+      <div class="talk-bubble tri-right round inbound left-in">
+        <div class="talktext">
+          <p>{{ conversation.inbound }}</p>
+        </div>
       </div>
-    </div>
-    <p />
-    <div class="talk-bubble tri-right round outbound right-in">
-      <div class="talktext">
-        <p>{{ conversation.outbound }}</p>
+      <p />
+      <div class="talk-bubble tri-right round outbound right-in">
+        <div class="talktext">
+          <p>{{ conversation.outbound }}</p>
+        </div>
       </div>
+      <br />
+      <br />
     </div>
-    <br />
-    <br />
   </div>
 </div>
 

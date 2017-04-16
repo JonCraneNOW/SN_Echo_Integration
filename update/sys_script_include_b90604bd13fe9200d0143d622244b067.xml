@@ -11,34 +11,39 @@
 EchoRequest.prototype = {
 	initialize: function(session, request) {
 		//See request and session objects here: https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference
+		
+		//Request and Session variables
 		this.request = request;
-		this.session = session;
 		this.REQUEST_TYPE = request.type;
+		this.session = session;
+		
+		this.intentRecord = this.getIntentRecord(); //Get intent record for current request
+		this.isAllowedIntent = this._checkIfAllowedIntent();
+		
+		//Initializing defaults;
 		this.intent_slots = {};
 		this.session_attributes = {};
-
-		this.response = '';
+		
+		//TODO: Get last verbal command. See if this request is allowed by checking if it requires a previous command.
+		this.lastCommand = this._getLastCommand();	
 	},
 
 	process: function() {
-		var ir = this.getIntentRecord();
-
-		if (!ir)
+		if (!this.intentRecord)
 			return;
 
-		this.handleIntent(ir);
+		this.handleIntent(this.intentRecord);
 	},
 
 	getIntentRecord: function() {
-		if (this.REQUEST_TYPE == 'LaunchRequest'){
+		if (this.REQUEST_TYPE == 'LaunchRequest')
 			keyword = 'LaunchRequest';
-		} else {
+		else {
 			keyword = this.request.intent.name;
 			this.intent_slots = this.request.intent.slots;
 
-			if (this.session.attributes) {
+			if (this.session.attributes)
 				this.session_attributes = this.session.attributes;
-			}
 		}
 
 		var ir = new GlideRecord('x_snc_amazon_echo_intent');
@@ -58,15 +63,17 @@ EchoRequest.prototype = {
 		var evaluator = new GlideScopedEvaluator();
 		evaluator.putVariable('content', this.intent_slots);
 		evaluator.putVariable('attributes', this.session_attributes);
+		evaluator.putVariable('current', intent);
 		evaluator.putVariable('result', null);
 		evaluator.evaluateScript(intent, 'script', null);
 		var res = evaluator.getVariable('result');
-
-		this.setResponse(evaluator.getVariable('result'));
+				
+		this.setResponse(res);
 	},
 
-	setResponse: function(response) {
+	setResponse: function(response, isError) {
 		this.response = response;
+
 		if (this.REQUEST_TYPE != 'LaunchRequest')
 			new x_snc_amazon_echo.EchoLog(this.session, this.request, this.response).log();
 
@@ -78,7 +85,17 @@ EchoRequest.prototype = {
 		erb.setOutputSpeech("PlainText", msg);
 		erb.setEnd(false);
 
-		this.setResponse(erb.response);
+		this.setResponse(erb.response, true);
+	},
+
+	_getLastCommand : function() {
+		var sid = this.session.sessionId.substr(this.session.sessionId.indexOf(".") + 1);
+		//TODO: Get last INBOUND log entry for this session. Check intent of that log to make sure current intent is a Next Intent for the previous. 
+		
+	},
+	
+	_checkIfAllowedIntent : function() {
+		
 	},
 
 	type: 'EchoRequest'
@@ -88,7 +105,7 @@ EchoRequest.prototype = {
         <sys_created_on>2016-04-15 17:29:03</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>b90604bd13fe9200d0143d622244b067</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>EchoRequest</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy>read</sys_policy>
@@ -96,6 +113,6 @@ EchoRequest.prototype = {
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sys_script_include_b90604bd13fe9200d0143d622244b067</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-17 06:49:08</sys_updated_on>
+        <sys_updated_on>2017-04-14 05:35:41</sys_updated_on>
     </sys_script_include>
 </record_update>

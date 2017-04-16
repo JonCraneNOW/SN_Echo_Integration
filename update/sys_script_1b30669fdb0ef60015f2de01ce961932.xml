@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_amazon_echo_intent</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Warn if no Phrases exist</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var gr = new GlideRecord('x_snc_amazon_echo_phrases');
+	gr.addQuery('intent', current.sys_id);
+	gr.query();
+	
+	if (!gr.next()){
+		gs.addInfoMessage("No Phrases exist for this Intent. To use this intent, Phrases must be created before generating a schema.");
+	}
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-04-16 06:10:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1b30669fdb0ef60015f2de01ce961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Warn if no Phrases exist</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_script_1b30669fdb0ef60015f2de01ce961932</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-04-16 06:10:25</sys_updated_on>
+        <template/>
+        <when>before_display</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=1b30669fdb0ef60015f2de01ce961932"/>
+</record_update>

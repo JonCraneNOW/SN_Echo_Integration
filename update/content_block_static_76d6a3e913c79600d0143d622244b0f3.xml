@@ -29,6 +29,7 @@
         <average_image_color>#ffffff</average_image_color>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
+        <encryption_context/>
         <file_name>Pasted Image.png</file_name>
         <image_height>89</image_height>
         <image_width>1128</image_width>
@@ -137,6 +138,7 @@
         <average_image_color>#ffffff</average_image_color>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
+        <encryption_context/>
         <file_name>Pasted Image.png</file_name>
         <image_height>107</image_height>
         <image_width>1240</image_width>
@@ -452,6 +454,7 @@
         <average_image_color>#ffffff</average_image_color>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
+        <encryption_context/>
         <file_name>Pasted Image.png</file_name>
         <image_height>100</image_height>
         <image_width>808</image_width>
@@ -632,6 +635,7 @@
         <average_image_color>#ffffff</average_image_color>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
+        <encryption_context/>
         <file_name>Pasted Image.png</file_name>
         <image_height>65</image_height>
         <image_width>815</image_width>
@@ -767,6 +771,7 @@
         <average_image_color>#ffffff</average_image_color>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
+        <encryption_context/>
         <file_name>Pasted Image.png</file_name>
         <image_height>93</image_height>
         <image_width>989</image_width>
@@ -947,6 +952,7 @@
         <average_image_color>#ffffff</average_image_color>
         <compressed>true</compressed>
         <content_type>image/png</content_type>
+        <encryption_context/>
         <file_name>Pasted Image.png</file_name>
         <image_height>94</image_height>
         <image_width>1235</image_width>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="always_available" label="Always available?" language="en" table="x_snc_amazon_echo_intent">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>always_available</element>
+            <help/>
+            <hint>If an intent is always available, it can be called at any time and isn't limited to being called after another intent.</hint>
+            <label>Always available?</label>
+            <language>en</language>
+            <name>x_snc_amazon_echo_intent</name>
+            <plural>Always available?s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2017-04-11 18:46:29</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>10cd93b9dbcab600d1a9f1351d961964</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Always available?</sys_name>
+            <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_amazon_echo_intent_always_available_en</sys_update_name>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2017-04-11 18:47:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

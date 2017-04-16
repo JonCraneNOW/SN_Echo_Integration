@@ -11,7 +11,7 @@
         <name>Amazon Echo</name>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
-        <runtime_access_tracking/>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
         <scope>x_snc_amazon_echo</scope>
         <scoped_administration>false</scoped_administration>
         <short_description/>
@@ -23,9 +23,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-04-05 14:33:43</sys_created_on>
         <sys_id>101eb7da13a21200d0143d622244b063</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-15 22:18:25</sys_updated_on>
+        <sys_updated_on>2017-04-16 06:12:15</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>
