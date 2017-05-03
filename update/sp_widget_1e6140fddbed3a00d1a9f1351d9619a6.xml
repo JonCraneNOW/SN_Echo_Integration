@@ -15,7 +15,18 @@
 	}
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css/>
+        <css>.padded-carousel-content-box {
+  background-color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px; 
+  min-height: 300px;
+  box-shadow: 0px 7px 14px 0px #888888;
+}
+
+.carousel-height {
+  height: 400px; 
+}</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -29,14 +40,19 @@
         <option_schema/>
         <public>false</public>
         <roles/>
-        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	data.intents = new x_snc_amazon_echo.EchoPortalUtils().getOrderedTopLevelIntents();
+})();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>jc</sys_created_by>
         <sys_created_on>2017-03-17 06:12:25</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1e6140fddbed3a00d1a9f1351d9619a6</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name>Echo Showcase - Detail Carousel</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy/>
@@ -44,7 +60,7 @@
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sp_widget_1e6140fddbed3a00d1a9f1351d9619a6</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-03-17 21:28:18</sys_updated_on>
+        <sys_updated_on>2017-04-19 17:11:39</sys_updated_on>
         <template><![CDATA[<div>
   <div class="row">
     <div ng-click="c.setActiveNav(0)"
@@ -71,7 +87,7 @@
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner carousel-height" role="listbox">
       <div class="item active">
         <div class="row padded">
           <div class="col-md-3 max-height">
@@ -126,7 +142,7 @@
       <div class="item">
         <div class="row padded">
           <div class="col-md-9 max-height carousel-text">
-            <div class="">
+            <div class="padded-carousel-content-box">
               <u>The short answer:</u> Anything!<br><br>
 
               <u>The long answer:</u> 
@@ -137,14 +153,12 @@
                 This means you can easily define your own intents and phrases, and paste the content into your Alexa Skill for rapid skill deployment! Get creative!
             </div>
           </div>
-          <div class="col-md-3 max-height carousel-text">
+          <div class="col-md-3 max-height carousel-text padded-carousel-content-box">
             <div class="centered-header">
               Full list of phrases:
             </div>
             <ul>
-              <li>Stuff will go here</li>
-              <li>Nothing here yet..</li>
-              <li>Welp...</li>
+              <li ng-repeat="intent in c.data.intents">{{ intent }}</li>
             </ul>
           </div>
         </div>
@@ -153,7 +167,7 @@
       <div class="item">
         <div class="row padded">
           <div class="col-md-12 mad-height">
-            <div class="centered-header">
+            <div class="centered-header padded-carousel-content-box">
               Community link
               <br>
               Share link
