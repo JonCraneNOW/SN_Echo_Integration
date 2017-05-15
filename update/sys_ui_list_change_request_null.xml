@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="change_request" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="change_request" element="NULL" name="change_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3de89610cb300200d71cb9c0c24c9cc1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-18 06:02:51</sys_created_on>
+            <sys_id>fde89610cb300200d71cb9c0c24c9cc1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-18 06:02:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="change_request" element="NULL" name="change_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3de89610cb300200d71cb9c0c24c9cc1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-18 06:02:51</sys_created_on>
+            <sys_id>31e89610cb300200d71cb9c0c24c9cc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-18 06:02:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>type</element>
+            <list_id display_value="change_request" element="NULL" name="change_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3de89610cb300200d71cb9c0c24c9cc1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-18 06:02:51</sys_created_on>
+            <sys_id>71e89610cb300200d71cb9c0c24c9cc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-18 06:02:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="change_request" element="NULL" name="change_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3de89610cb300200d71cb9c0c24c9cc1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-18 06:02:51</sys_created_on>
+            <sys_id>b1e89610cb300200d71cb9c0c24c9cc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-18 06:02:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>start_date</element>
+            <list_id display_value="change_request" element="NULL" name="change_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3de89610cb300200d71cb9c0c24c9cc1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-18 06:02:51</sys_created_on>
+            <sys_id>f1e89610cb300200d71cb9c0c24c9cc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-18 06:02:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>end_date</element>
+            <list_id display_value="change_request" element="NULL" name="change_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3de89610cb300200d71cb9c0c24c9cc1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-18 06:02:51</sys_created_on>
+            <sys_id>35e89610cb300200d71cb9c0c24c9cc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-18 06:02:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="change_request" element="NULL" name="change_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">3de89610cb300200d71cb9c0c24c9cc1</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-18 06:02:51</sys_created_on>
+            <sys_id>75e89610cb300200d71cb9c0c24c9cc2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-18 06:02:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>change_request</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2017-05-08 20:15:00</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>08f476a2db6e7600d1a9f1351d9619c1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>change_request</sys_name>
+            <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+            <sys_update_name>sys_ui_list_change_request_null</sys_update_name>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2017-05-08 20:15:00</sys_updated_on>
+            <sys_user display_value="Jon Crane">4867ad4ddb5d320015f2de01ce961924</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

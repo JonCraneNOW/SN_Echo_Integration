@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>ea22b6cadb5db200d1a9f1351d96198e</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;record_update table="x_snc_amazon_echo_intent"&gt;
+    &lt;x_snc_amazon_echo_intent action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;always_available&gt;true&lt;/always_available&gt;
+        &lt;category/&gt;
+        &lt;fallback&gt;false&lt;/fallback&gt;
+        &lt;intent_ends_session&gt;false&lt;/intent_ends_session&gt;
+        &lt;keyword&gt;WhatsHappening&lt;/keyword&gt;
+        &lt;name&gt;What's happening today?&lt;/name&gt;
+        &lt;next_intent&gt;65b172cadb5db200d1a9f1351d9619b3,778172cadb5db200d1a9f1351d9619b9,54cdae0adb5db200d1a9f1351d9619d1&lt;/next_intent&gt;
+        &lt;order&gt;100&lt;/order&gt;
+        &lt;output_speech_format/&gt;
+        &lt;reprompt_speech_format/&gt;
+        &lt;script&gt;&lt;![CDATA[(function(content, attributes, erb, current){
+		
+	var introMessage = "Here's what's happening today: ";
+	var outroMessage = ' ';
+	var msg = '';
+	
+	//Service Interruptions
+	var gaO = new GlideAggregate('cmdb_ci_outage');
+	gaO.addAggregate('COUNT');
+	gaO.addEncodedQuery('begin&lt;javascript:gs.daysAgoStart(0)^endISEMPTY^typeINdegradation,outage');
+	gaO.query();
+	
+	var outages = 0;
+	if (gaO.next())
+		outages = gaO.getAggregate('COUNT');
+	
+	if (outages &gt; 0) {
+		introMessage += "There " + (outages &gt; 1 ? "are " : "is ") + outages +
+		(outages &gt; 1 ? " Outages or Service Interruptions " : " Outage or Service Interruption ") +
+		" impacting services today. ";
+		outroMessage += "To hear the outage details, say 'Hear Outages. '";
+	}
+	
+	//P1 incidents
+	var gaI = new GlideAggregate('incident');
+	gaI.addAggregate('COUNT');
+	gaI.addEncodedQuery('active=true^priority=1');
+	gaI.query();
+	var incidents = 0;
+	if (gaI.next())
+		incidents = gaI.getAggregate('COUNT');
+	
+	if (incidents &gt; 0) {
+		introMessage += "There " + (incidents &gt; 1 ? "are " : "is ") + incidents +
+		(incidents &gt; 1 ? " active Priority One incidents." : " active Priority One incident.");
+		outroMessage += "To hear the Priority one incident details, say 'Hear Incidents. '";
+	}
+	
+	
+	//Changes
+	var gaC = new GlideAggregate('change_request');
+	gaC.addAggregate('COUNT');
+	gaC.addEncodedQuery('start_dateONToday@javascript:gs.daysAgoStart(0)@javascript:gs.daysAgoEnd(0)^active=true');
+	gaC.query();
+	var changes = 0;
+	if (gaC.next())
+		changes = gaC.getAggregate('COUNT');
+
+	if (changes &gt; 0) {
+		introMessage += "There " + (changes &gt; 1 ? "are " : "is ") + changes +
+		(changes &gt; 1 ? " changes " : " change ") +
+		'scheduled for implementation today';	
+		outroMessage += "To hear the Change details, say 'Hear Changes. '";
+	}
+	
+	if (incidents == 0 &amp;&amp; outages == 0 &amp;&amp; changes == 0){
+		introMessage += 'It looks like there are no interruptions, Priority one incidents or changes scheduled today. Relax and take a load off.';
+	}
+	
+	msg = "&lt;speak&gt;" + introMessage + outroMessage + "&lt;/speak&gt;";
+
+	erb.setOutputSpeech("SSML", "", msg);
+	erb.setReprompt("SSML", "", "&lt;speak&gt;" + outroMessage + "&lt;/speak&gt;");
+	erb.setEnd(false);
+	
+	result = erb.getResponse();
+	
+})(content, attributes, new EchoResponseBuilder(), current);]]&gt;&lt;/script&gt;
+        &lt;slot_name_1/&gt;
+        &lt;slot_name_2/&gt;
+        &lt;slot_name_3/&gt;
+        &lt;slot_type_1/&gt;
+        &lt;slot_type_2/&gt;
+        &lt;slot_type_3/&gt;
+        &lt;sys_created_by&gt;jc&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2017-03-06 03:27:26&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;ea22b6cadb5db200d1a9f1351d96198e&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;jc&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2017-04-18 16:14:08&lt;/sys_updated_on&gt;
+        &lt;top_level_intent&gt;true&lt;/top_level_intent&gt;
+    &lt;/x_snc_amazon_echo_intent&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-05-13 01:47:16</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c657ac00db72f60015f2de01ce9619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>What's happening today?</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_metadata_link_c657ac00db72f60015f2de01ce9619d0</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-05-13 01:47:16</sys_updated_on>
+        <tablename>x_snc_amazon_echo_intent</tablename>
+    </sys_metadata_link>
+</record_update>

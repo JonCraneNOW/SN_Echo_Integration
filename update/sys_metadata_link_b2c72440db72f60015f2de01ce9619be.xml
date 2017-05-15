@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>c8ede257db4ef60015f2de01ce9619b6</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_snc_amazon_echo_phrases">
+    <x_snc_amazon_echo_phrases action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <intent display_value="What's the status of my IT Operations Portfolio?">1dad2617db4ef60015f2de01ce961969</intent>
+        <phrase>IT Operations Portfolio Status</phrase>
+        <primary>false</primary>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-04-16 07:08:21</sys_created_on>
+        <sys_id>c8ede257db4ef60015f2de01ce9619b6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-04-17 01:31:09</sys_updated_on>
+    </x_snc_amazon_echo_phrases>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-05-13 01:49:13</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>b2c72440db72f60015f2de01ce9619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IT Operations Portfolio Status</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_metadata_link_b2c72440db72f60015f2de01ce9619be</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-05-13 01:49:13</sys_updated_on>
+        <tablename>x_snc_amazon_echo_phrases</tablename>
+    </sys_metadata_link>
+</record_update>

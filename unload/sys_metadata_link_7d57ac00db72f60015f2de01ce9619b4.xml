@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>7f293e26db6e7600d1a9f1351d96198a</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;record_update table="x_snc_amazon_echo_intent"&gt;
+    &lt;x_snc_amazon_echo_intent action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;false&lt;/active&gt;
+        &lt;always_available&gt;false&lt;/always_available&gt;
+        &lt;category/&gt;
+        &lt;fallback&gt;false&lt;/fallback&gt;
+        &lt;intent_ends_session&gt;false&lt;/intent_ends_session&gt;
+        &lt;keyword&gt;IncidentsOlder90Days&lt;/keyword&gt;
+        &lt;name&gt;How many open incidents are older than 90 days?&lt;/name&gt;
+        &lt;next_intent/&gt;
+        &lt;order/&gt;
+        &lt;output_speech_format&gt;SSML&lt;/output_speech_format&gt;
+        &lt;reprompt_speech_format/&gt;
+        &lt;script&gt;&lt;![CDATA[(function(current, content, attributes, ER, IntentUtils){
+	var msg = '&lt;speak&gt;';
+
+	var request = new sn_ws.RESTMessageV2();
+	request.setEndpoint('https://k17alexademo.service-now.com/api/now/pa/scorecards?sysparm_uuid=fb007202d7130100b96d45a3ce6103b4&amp;sysparm_breakdown=65947e02d7130100b96d45a3ce61033a&amp;sysparm_limit=1');
+	request.setHttpMethod('GET');
+
+	var user = 'jc';
+	var password = 'SNCRocks123!';
+
+	request.setBasicAuth(user,password);
+	request.setRequestHeader("Accept","application/json");
+
+	var response = request.execute();
+	var body = response.getBody();
+	var bodyObj = global.JSON.parse(body);
+
+	var count = bodyObj.result[0].value;
+	
+	msg += "There are &lt;say-as interpret-as='digits'&gt;" + count  + "&lt;/say-as&gt;" + 
+
+	ER.setOutputSpeech(current.output_speech_format, "", msg);
+	ER.setEnd(current.intent_ends_session);
+
+	result = ER.response; 
+	
+})(current, content, attributes, new EchoResponseBuilder(), new IntentUtils());]]&gt;&lt;/script&gt;
+        &lt;slot_name_1/&gt;
+        &lt;slot_name_2/&gt;
+        &lt;slot_name_3/&gt;
+        &lt;slot_type_1/&gt;
+        &lt;slot_type_2/&gt;
+        &lt;slot_type_3/&gt;
+        &lt;sys_created_by&gt;jc&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2017-05-08 23:14:49&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;7f293e26db6e7600d1a9f1351d96198a&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;jc&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2017-05-08 23:22:46&lt;/sys_updated_on&gt;
+        &lt;top_level_intent&gt;false&lt;/top_level_intent&gt;
+    &lt;/x_snc_amazon_echo_intent&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-05-13 01:47:15</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>7d57ac00db72f60015f2de01ce9619b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>How many open incidents are older than 90 days?</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_metadata_link_7d57ac00db72f60015f2de01ce9619b4</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-05-13 01:47:15</sys_updated_on>
+        <tablename>x_snc_amazon_echo_intent</tablename>
+    </sys_metadata_link>
+</record_update>

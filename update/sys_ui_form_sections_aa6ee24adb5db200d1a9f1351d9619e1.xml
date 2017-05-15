@@ -53,7 +53,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>aa6ee24adb5db200d1a9f1351d9619e1</sys_id>
-            <sys_mod_count>4</sys_mod_count>
+            <sys_mod_count>7</sys_mod_count>
             <sys_name>x_snc_amazon_echo_intent</sys_name>
             <sys_overrides/>
             <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
@@ -62,7 +62,7 @@
             <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
             <sys_update_name>sys_ui_form_sections_aa6ee24adb5db200d1a9f1351d9619e1</sys_update_name>
             <sys_updated_by>jc</sys_updated_by>
-            <sys_updated_on>2017-04-13 01:50:24</sys_updated_on>
+            <sys_updated_on>2017-05-13 02:02:11</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

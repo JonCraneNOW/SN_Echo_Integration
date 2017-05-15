@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>04a0c646dbd9b200d1a9f1351d96198b</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_snc_amazon_echo_slot_types">
+    <x_snc_amazon_echo_slot_types action="INSERT_OR_UPDATE">
+        <slot_type>AMAZON.AT_REGION</slot_type>
+        <source>Built-in</source>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-05 23:51:01</sys_created_on>
+        <sys_id>04a0c646dbd9b200d1a9f1351d96198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-05 23:51:01</sys_updated_on>
+        <values/>
+    </x_snc_amazon_echo_slot_types>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-05-13 01:49:47</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c3e76440db72f60015f2de01ce9619a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AMAZON.AT_REGION</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_metadata_link_c3e76440db72f60015f2de01ce9619a2</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-05-13 01:49:47</sys_updated_on>
+        <tablename>x_snc_amazon_echo_slot_types</tablename>
+    </sys_metadata_link>
+</record_update>

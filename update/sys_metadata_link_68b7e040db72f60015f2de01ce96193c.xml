@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>5c488b86db9db200d1a9f1351d96199e</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_snc_amazon_echo_phrases">
+    <x_snc_amazon_echo_phrases action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <intent display_value="Check Status (Step 2)">5b25fe0edb5db200d1a9f1351d961930</intent>
+        <phrase>I. N. C. {Number}</phrase>
+        <primary>true</primary>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-03-06 05:04:01</sys_created_on>
+        <sys_id>5c488b86db9db200d1a9f1351d96199e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-03-16 19:05:37</sys_updated_on>
+    </x_snc_amazon_echo_phrases>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-05-13 01:48:47</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>68b7e040db72f60015f2de01ce96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>I. N. C. {Number}</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_metadata_link_68b7e040db72f60015f2de01ce96193c</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-05-13 01:48:47</sys_updated_on>
+        <tablename>x_snc_amazon_echo_phrases</tablename>
+    </sys_metadata_link>
+</record_update>

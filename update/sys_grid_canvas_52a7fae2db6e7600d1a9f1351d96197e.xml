@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_grid_canvas" unload_date="2017-05-15 21:19:02">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PA Incident Overview">815b3831d7201100b96d45a3ce6103c2</legacy_page>
+        <name>PA Incident Overview</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-05-08 20:26:54</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>52a7fae2db6e7600d1a9f1351d96197e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA Incident Overview</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_grid_canvas_52a7fae2db6e7600d1a9f1351d96197e</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-05-08 20:26:54</sys_updated_on>
+        <related_items_node>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA Incident Overview">52a7fae2db6e7600d1a9f1351d96197e</grid_canvas>
+                <height>11</height>
+                <portal_widget display_value="Created 2014-03-19 05:39:53">b7ce5361d7231100b96d45a3ce610349</portal_widget>
+                <posx>0</posx>
+                <posy>10</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>jc</sys_created_by>
+                <sys_created_on>2017-05-08 20:26:54</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>5aa7fae2db6e7600d1a9f1351d961982</sys_id>
+                <sys_mod_count>1</sys_mod_count>
+                <sys_name>52a7fae2db6e7600d1a9f1351d96197e</sys_name>
+                <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_5aa7fae2db6e7600d1a9f1351d961982</sys_update_name>
+                <sys_updated_by>jc</sys_updated_by>
+                <sys_updated_on>2017-05-08 20:27:02</sys_updated_on>
+                <width>12</width>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone0</dropzone>
+                        <offset>1</offset>
+                        <page display_value="PA Incident Overview">815b3831d7201100b96d45a3ce6103c2</page>
+                        <summary/>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                        <sys_id>b7ce5361d7231100b96d45a3ce610349</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA Incident Overview">52a7fae2db6e7600d1a9f1351d96197e</grid_canvas>
+                                <height>11</height>
+                                <portal_widget display_value="Created 2014-03-19 05:39:53">b7ce5361d7231100b96d45a3ce610349</portal_widget>
+                                <posx>0</posx>
+                                <posy>10</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>jc</sys_created_by>
+                                <sys_created_on>2017-05-08 20:26:54</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>5aa7fae2db6e7600d1a9f1351d961982</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_name>52a7fae2db6e7600d1a9f1351d96197e</sys_name>
+                                <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_5aa7fae2db6e7600d1a9f1351d961982</sys_update_name>
+                                <sys_updated_by>jc</sys_updated_by>
+                                <sys_updated_on>2017-05-08 20:27:02</sys_updated_on>
+                                <width>12</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b7ce5361d7231100b96d45a3ce610349</portal_section>
+                                <sys_created_by>system</sys_created_by>
+                                <sys_created_on>2015-07-06 15:05:08</sys_created_on>
+                                <sys_id>01a1cd56d7010200b96d45a3ce61034e</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>system</sys_updated_by>
+                                <sys_updated_on>2015-07-06 15:05:08</sys_updated_on>
+                                <value>pa_widget_description</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b7ce5361d7231100b96d45a3ce610349</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>7bce5361d7231100b96d45a3ce610349</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>6abd1361d7231100b96d45a3ce61036d</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b7ce5361d7231100b96d45a3ce610349</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>7fce5361d7231100b96d45a3ce610349</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>com.snc.pa.ui.RenderPerformanceAnalytics</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b7ce5361d7231100b96d45a3ce610349</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>f7ce5361d7231100b96d45a3ce610349</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>Basic indicators</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>type</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b7ce5361d7231100b96d45a3ce610349</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>fbce5361d7231100b96d45a3ce610349</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>list</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b7ce5361d7231100b96d45a3ce610349</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>ffce5361d7231100b96d45a3ce610349</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>815b3831d7201100b96d45a3ce6103c2</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone2</dropzone>
+                        <offset>0</offset>
+                        <page display_value="PA Incident Overview">815b3831d7201100b96d45a3ce6103c2</page>
+                        <summary/>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                        <sys_id>bfce5361d7231100b96d45a3ce61034a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA Incident Overview">52a7fae2db6e7600d1a9f1351d96197e</grid_canvas>
+                                <height>10</height>
+                                <portal_widget display_value="Created 2014-03-19 05:39:53">bfce5361d7231100b96d45a3ce61034a</portal_widget>
+                                <posx>6</posx>
+                                <posy>21</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>jc</sys_created_by>
+                                <sys_created_on>2017-05-08 20:26:54</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>5ea7fae2db6e7600d1a9f1351d961985</sys_id>
+                                <sys_mod_count>2</sys_mod_count>
+                                <sys_name>52a7fae2db6e7600d1a9f1351d96197e</sys_name>
+                                <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_5ea7fae2db6e7600d1a9f1351d961985</sys_update_name>
+                                <sys_updated_by>jc</sys_updated_by>
+                                <sys_updated_on>2017-05-08 20:27:02</sys_updated_on>
+                                <width>6</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bfce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>system</sys_created_by>
+                                <sys_created_on>2015-07-06 15:05:08</sys_created_on>
+                                <sys_id>0da1cd56d7010200b96d45a3ce61034d</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>system</sys_updated_by>
+                                <sys_updated_on>2015-07-06 15:05:08</sys_updated_on>
+                                <value>pa_widget_description</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bfce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>73ce5361d7231100b96d45a3ce61034b</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>4f1c5b21d7231100b96d45a3ce6103f0</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bfce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>77ce5361d7231100b96d45a3ce61034b</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>com.snc.pa.ui.RenderPerformanceAnalytics</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>type</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bfce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>f3ce5361d7231100b96d45a3ce61034b</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>breakdown</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bfce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>f7ce5361d7231100b96d45a3ce61034b</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>815b3831d7201100b96d45a3ce6103c2</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bfce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>ffce5361d7231100b96d45a3ce61034a</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>New incidents by priority</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone1</dropzone>
+                        <offset>0</offset>
+                        <page display_value="PA Incident Overview">815b3831d7201100b96d45a3ce6103c2</page>
+                        <summary>New incidents</summary>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                        <sys_id>b3ce5361d7231100b96d45a3ce61034a</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2015-07-07 10:51:48</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA Incident Overview">52a7fae2db6e7600d1a9f1351d96197e</grid_canvas>
+                                <height>10</height>
+                                <portal_widget display_value="Created 2014-03-19 05:39:53">b3ce5361d7231100b96d45a3ce61034a</portal_widget>
+                                <posx>0</posx>
+                                <posy>21</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>jc</sys_created_by>
+                                <sys_created_on>2017-05-08 20:26:54</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>d2a7fae2db6e7600d1a9f1351d961984</sys_id>
+                                <sys_mod_count>2</sys_mod_count>
+                                <sys_name>52a7fae2db6e7600d1a9f1351d96197e</sys_name>
+                                <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_d2a7fae2db6e7600d1a9f1351d961984</sys_update_name>
+                                <sys_updated_by>jc</sys_updated_by>
+                                <sys_updated_on>2017-05-08 20:27:02</sys_updated_on>
+                                <width>6</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b3ce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>77ce5361d7231100b96d45a3ce61034a</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>df8f9652d7031100b96d45a3ce61032d</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b3ce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>7bce5361d7231100b96d45a3ce61034a</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>com.snc.pa.ui.RenderPerformanceAnalytics</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b3ce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>system</sys_created_by>
+                                <sys_created_on>2015-07-06 15:05:08</sys_created_on>
+                                <sys_id>8da1cd56d7010200b96d45a3ce61034d</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>system</sys_updated_by>
+                                <sys_updated_on>2015-07-06 15:05:08</sys_updated_on>
+                                <value>pa_widget_description</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b3ce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>f3ce5361d7231100b96d45a3ce61034a</sys_id>
+                                <sys_mod_count>1</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2015-07-07 10:51:48</sys_updated_on>
+                                <value>New incidents</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>type</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b3ce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>f7ce5361d7231100b96d45a3ce61034a</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>time</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">b3ce5361d7231100b96d45a3ce61034a</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>fbce5361d7231100b96d45a3ce61034a</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>815b3831d7201100b96d45a3ce6103c2</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+                <related_items_node>
+                    <sys_portal action="INSERT_OR_UPDATE">
+                        <dropzone>dropzone0</dropzone>
+                        <offset>0</offset>
+                        <page display_value="PA Incident Overview">815b3831d7201100b96d45a3ce6103c2</page>
+                        <summary/>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                        <sys_id>bbce5361d7231100b96d45a3ce610348</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                        <related_items_node>
+                            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                                <grid_canvas display_value="PA Incident Overview">52a7fae2db6e7600d1a9f1351d96197e</grid_canvas>
+                                <height>10</height>
+                                <portal_widget display_value="Created 2014-03-19 05:39:53">bbce5361d7231100b96d45a3ce610348</portal_widget>
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                                <sys_created_by>jc</sys_created_by>
+                                <sys_created_on>2017-05-08 20:26:54</sys_created_on>
+                                <sys_customer_update>true</sys_customer_update>
+                                <sys_id>d6a7fae2db6e7600d1a9f1351d961980</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_name>52a7fae2db6e7600d1a9f1351d96197e</sys_name>
+                                <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+                                <sys_policy/>
+                                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                                <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+                                <sys_update_name>sys_grid_canvas_pane_d6a7fae2db6e7600d1a9f1351d961980</sys_update_name>
+                                <sys_updated_by>jc</sys_updated_by>
+                                <sys_updated_on>2017-05-08 20:26:54</sys_updated_on>
+                                <width>12</width>
+                            </sys_grid_canvas_pane>
+                        </related_items_node>
+                        <related_items_node>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>renderer</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bbce5361d7231100b96d45a3ce610348</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>73ce5361d7231100b96d45a3ce610349</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>com.snc.pa.ui.RenderPerformanceAnalytics</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>sys_id</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bbce5361d7231100b96d45a3ce610348</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>7fce5361d7231100b96d45a3ce610348</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>9eaa1b21d7231100b96d45a3ce610306</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>help_text_window</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bbce5361d7231100b96d45a3ce610348</portal_section>
+                                <sys_created_by>system</sys_created_by>
+                                <sys_created_on>2015-07-06 15:05:08</sys_created_on>
+                                <sys_id>89a1cd56d7010200b96d45a3ce61034d</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>system</sys_updated_by>
+                                <sys_updated_on>2015-07-06 15:05:08</sys_updated_on>
+                                <value>pa_widget_description</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>current_page</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bbce5361d7231100b96d45a3ce610348</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>f3ce5361d7231100b96d45a3ce610349</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>815b3831d7201100b96d45a3ce6103c2</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>title</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bbce5361d7231100b96d45a3ce610348</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>fbce5361d7231100b96d45a3ce610348</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>Open incidents</value>
+                            </sys_portal_preferences>
+                            <sys_portal_preferences action="INSERT_OR_UPDATE">
+                                <name>type</name>
+                                <portal_section display_value="Created 2014-03-19 05:39:53">bbce5361d7231100b96d45a3ce610348</portal_section>
+                                <sys_created_by>admin</sys_created_by>
+                                <sys_created_on>2014-03-19 12:39:53</sys_created_on>
+                                <sys_id>ffce5361d7231100b96d45a3ce610348</sys_id>
+                                <sys_mod_count>0</sys_mod_count>
+                                <sys_updated_by>admin</sys_updated_by>
+                                <sys_updated_on>2014-03-19 12:39:53</sys_updated_on>
+                                <value>time</value>
+                            </sys_portal_preferences>
+                        </related_items_node>
+                    </sys_portal>
+                </related_items_node>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA Incident Overview">52a7fae2db6e7600d1a9f1351d96197e</grid_canvas>
+                <height>10</height>
+                <portal_widget display_value="Created 2014-03-19 05:39:53">bfce5361d7231100b96d45a3ce61034a</portal_widget>
+                <posx>6</posx>
+                <posy>21</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>jc</sys_created_by>
+                <sys_created_on>2017-05-08 20:26:54</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>5ea7fae2db6e7600d1a9f1351d961985</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_name>52a7fae2db6e7600d1a9f1351d96197e</sys_name>
+                <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_5ea7fae2db6e7600d1a9f1351d961985</sys_update_name>
+                <sys_updated_by>jc</sys_updated_by>
+                <sys_updated_on>2017-05-08 20:27:02</sys_updated_on>
+                <width>6</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA Incident Overview">52a7fae2db6e7600d1a9f1351d96197e</grid_canvas>
+                <height>10</height>
+                <portal_widget display_value="Created 2014-03-19 05:39:53">b3ce5361d7231100b96d45a3ce61034a</portal_widget>
+                <posx>0</posx>
+                <posy>21</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>jc</sys_created_by>
+                <sys_created_on>2017-05-08 20:26:54</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>d2a7fae2db6e7600d1a9f1351d961984</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_name>52a7fae2db6e7600d1a9f1351d96197e</sys_name>
+                <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_d2a7fae2db6e7600d1a9f1351d961984</sys_update_name>
+                <sys_updated_by>jc</sys_updated_by>
+                <sys_updated_on>2017-05-08 20:27:02</sys_updated_on>
+                <width>6</width>
+            </sys_grid_canvas_pane>
+            <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+                <grid_canvas display_value="PA Incident Overview">52a7fae2db6e7600d1a9f1351d96197e</grid_canvas>
+                <height>10</height>
+                <portal_widget display_value="Created 2014-03-19 05:39:53">bbce5361d7231100b96d45a3ce610348</portal_widget>
+                <posx>0</posx>
+                <posy>0</posy>
+                <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+                <sys_created_by>jc</sys_created_by>
+                <sys_created_on>2017-05-08 20:26:54</sys_created_on>
+                <sys_customer_update>true</sys_customer_update>
+                <sys_id>d6a7fae2db6e7600d1a9f1351d961980</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_name>52a7fae2db6e7600d1a9f1351d96197e</sys_name>
+                <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+                <sys_policy/>
+                <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+                <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+                <sys_update_name>sys_grid_canvas_pane_d6a7fae2db6e7600d1a9f1351d961980</sys_update_name>
+                <sys_updated_by>jc</sys_updated_by>
+                <sys_updated_on>2017-05-08 20:26:54</sys_updated_on>
+                <width>12</width>
+            </sys_grid_canvas_pane>
+        </related_items_node>
+    </sys_grid_canvas>
+</record_update>

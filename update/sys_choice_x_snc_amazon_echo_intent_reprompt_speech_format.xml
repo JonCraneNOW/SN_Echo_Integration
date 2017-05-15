@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="reprompt_speech_format" table="x_snc_amazon_echo_intent" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reprompt_speech_format</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PlainText</label>
+            <language>en</language>
+            <name>x_snc_amazon_echo_intent</name>
+            <sequence>0</sequence>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2017-05-03 19:25:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54c97c05db2eb200d1a9f1351d961914</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2017-05-03 19:25:55</sys_updated_on>
+            <value>PlainText</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reprompt_speech_format</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SSML</label>
+            <language>en</language>
+            <name>x_snc_amazon_echo_intent</name>
+            <sequence>1</sequence>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2017-05-03 19:25:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>14c97c05db2eb200d1a9f1351d961915</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2017-05-03 19:25:55</sys_updated_on>
+            <value>SSML</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>reprompt_speech_format</element>
+            <name>x_snc_amazon_echo_intent</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>jc</sys_created_by>
+            <sys_created_on>2017-05-03 19:25:55</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>dcc97c05db2eb200d1a9f1351d961914</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>reprompt_speech_format</sys_name>
+            <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+            <sys_update_name>sys_choice_x_snc_amazon_echo_intent_reprompt_speech_format</sys_update_name>
+            <sys_updated_by>jc</sys_updated_by>
+            <sys_updated_on>2017-05-13 02:02:16</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

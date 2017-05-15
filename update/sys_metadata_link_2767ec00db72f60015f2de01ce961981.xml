@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>1756561bdb0ef60015f2de01ce961973</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;record_update table="x_snc_amazon_echo_intent"&gt;
+    &lt;x_snc_amazon_echo_intent action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;always_available&gt;true&lt;/always_available&gt;
+        &lt;category/&gt;
+        &lt;fallback&gt;false&lt;/fallback&gt;
+        &lt;intent_ends_session&gt;false&lt;/intent_ends_session&gt;
+        &lt;keyword&gt;CriticalVulnerabilities&lt;/keyword&gt;
+        &lt;name&gt;Hear Critical Vulnerable Items&lt;/name&gt;
+        &lt;next_intent&gt;58bb12dbdb0ef60015f2de01ce961901&lt;/next_intent&gt;
+        &lt;order/&gt;
+        &lt;output_speech_format&gt;SSML&lt;/output_speech_format&gt;
+        &lt;reprompt_speech_format/&gt;
+        &lt;script&gt;&lt;![CDATA[(function(current, content, attributes, ER, IntentUtils){
+	var msg = '&lt;speak&gt;';
+	var affectedSvcCount = 0;
+
+	var gr = new GlideRecord('sn_vul_vulnerable_item');
+	gr.addEncodedQuery('active=true^priority=1');
+	gr.query();
+
+	while (gr.next()){
+		msg += "Vulnerable item " + IntentUtils.taskNumberToSSML(gr);
+		msg += (!gr.assigned_to ? " is unassigned " : (' is assigned to ' + gr.assigned_to.getDisplayValue() + ', '));
+		var updatedDateTime = IntentUtils.formatDateTime(gr.sys_updated_on);
+		msg += 'and was last updated on ' + updatedDateTime.date + ' at ' + updatedDateTime.time + '. ';
+		msg += "The last update was: " + IntentUtils.getLastCommentOrWorkNote('work_notes', gr) + ". ";
+		
+		msg += "The affected Configuration Item is: " + gr.cmdb_ci.getDisplayValue() + '. ';
+
+		var affectedSvc = new GlideAggregate('task_cmdb_ci_service');
+		affectedSvc.addQuery('task', gr.sys_id);
+		affectedSvc.addQuery('cmdb_ci_service.busines_criticality', '1 - most critical');
+		affectedSvc.addAggregate('COUNT');
+		affectedSvc.query();
+
+
+		if (affectedSvc.next())
+			affectedSvcCount = affectedSvc.getAggregate('COUNT');
+
+		if (affectedSvcCount &gt; 0){
+			msg += "This Vulnerable item is impacting " + affectedSvcCount + " Critical services, which could result in significant business impact. You may want to consider auto-remediation. To attempt to auto-remediate this Vulnerability, say 'Run Remediation Workflow'.";
+		}
+
+	}
+
+	msg += "&lt;/speak&gt;";
+
+	ER.setOutputSpeech(current.output_speech_format, "", msg);
+	ER.setEnd(current.intent_ends_session);
+	result = ER.response; //Required
+})(current, content, attributes, new EchoResponseBuilder(), new IntentUtils());]]&gt;&lt;/script&gt;
+        &lt;slot_name_1/&gt;
+        &lt;slot_name_2/&gt;
+        &lt;slot_name_3/&gt;
+        &lt;slot_type_1/&gt;
+        &lt;slot_type_2/&gt;
+        &lt;slot_type_3/&gt;
+        &lt;sys_created_by&gt;jc&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2017-04-16 05:25:29&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;1756561bdb0ef60015f2de01ce961973&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;jc&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2017-04-16 05:51:54&lt;/sys_updated_on&gt;
+        &lt;top_level_intent&gt;false&lt;/top_level_intent&gt;
+    &lt;/x_snc_amazon_echo_intent&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-05-13 01:47:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>2767ec00db72f60015f2de01ce961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hear Critical Vulnerable Items</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_metadata_link_2767ec00db72f60015f2de01ce961981</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-05-13 01:47:39</sys_updated_on>
+        <tablename>x_snc_amazon_echo_intent</tablename>
+    </sys_metadata_link>
+</record_update>

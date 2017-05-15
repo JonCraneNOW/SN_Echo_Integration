@@ -25,7 +25,7 @@
 }
 
 .carousel-height {
-  height: 400px; 
+  height: 430px; 
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -52,7 +52,7 @@
         <sys_created_on>2017-03-17 06:12:25</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1e6140fddbed3a00d1a9f1351d9619a6</sys_id>
-        <sys_mod_count>59</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>Echo Showcase - Detail Carousel</sys_name>
         <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
         <sys_policy/>
@@ -60,7 +60,7 @@
         <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
         <sys_update_name>sp_widget_1e6140fddbed3a00d1a9f1351d9619a6</sys_update_name>
         <sys_updated_by>jc</sys_updated_by>
-        <sys_updated_on>2017-04-19 17:11:39</sys_updated_on>
+        <sys_updated_on>2017-05-03 19:53:48</sys_updated_on>
         <template><![CDATA[<div>
   <div class="row">
     <div ng-click="c.setActiveNav(0)"
@@ -148,9 +148,9 @@
               <u>The long answer:</u> 
               The Alexa app was built to allow easy addition of new phrases and responses from your ServiceNow instance. An Intent Schema and Utterance generator makes it easy to create new phrases and bring them to your Alexa skill.
               <p><p>
-                A series of Intents can be defined that store how you want to handle and respond to phrases. Each Intent has a list of phrases that, when spoken, will call that Intent. The script contained within the intent is pre-formatted to send the response back to the Alexa skill.
+              A series of Intents can be defined that store how you want to handle and respond to phrases. Each Intent has a list of phrases that, when spoken, will call that Intent. The script contained within the intent is pre-formatted to send the response back to the Alexa skill.
               <p><p>
-                This means you can easily define your own intents and phrases, and paste the content into your Alexa Skill for rapid skill deployment! Get creative!
+              This means you can easily define your own intents and phrases, and paste the content into your Alexa Skill for rapid skill deployment! Get creative!
             </div>
           </div>
           <div class="col-md-3 max-height carousel-text padded-carousel-content-box">
@@ -168,11 +168,17 @@
         <div class="row padded">
           <div class="col-md-12 mad-height">
             <div class="centered-header padded-carousel-content-box">
-              Community link
+              Get it right here!
               <br>
-              Share link
+              Simply scan the QR code with your phone, which will take you to the community page:<p>
+              <img src="qrcode.png" width="207" height="210"/>
+
+              </p>
               <br>
-              Nothing interesting here yet...
+              If you're more of a "I like to type my own links" kinda person, then here's the direct link to the Community: 
+              <p>
+                <a href="https://community.servicenow.com/docs/DOC-6805">https://community.servicenow.com/docs/DOC-6805</a>
+              </p>
             </div>
           </div>
 

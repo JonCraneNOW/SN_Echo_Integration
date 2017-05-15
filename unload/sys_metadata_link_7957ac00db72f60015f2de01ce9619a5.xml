@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0d90ed66db8ef600d1a9f1351d961941</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;record_update table="x_snc_amazon_echo_intent"&gt;
+    &lt;x_snc_amazon_echo_intent action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;always_available&gt;false&lt;/always_available&gt;
+        &lt;category/&gt;
+        &lt;fallback&gt;false&lt;/fallback&gt;
+        &lt;intent_ends_session&gt;false&lt;/intent_ends_session&gt;
+        &lt;keyword&gt;ServiceInterruptions&lt;/keyword&gt;
+        &lt;name&gt;Are there any service interruptions?&lt;/name&gt;
+        &lt;next_intent/&gt;
+        &lt;order&gt;300&lt;/order&gt;
+        &lt;output_speech_format&gt;PlainText&lt;/output_speech_format&gt;
+        &lt;reprompt_speech_format/&gt;
+        &lt;script&gt;&lt;![CDATA[(function(current, content, attributes, ER, IntentUtils){
+	
+	var msg = "";
+	
+	var gr = new GlideRecord('cmdb_ci_outage');
+	gr.addEncodedQuery('begin&lt;=javascript:gs.daysAgoEnd(0)^endISEMPTY');
+	gr.query();
+	
+	while (gr.next()){
+		msg += "There is " + (gr.type == 'outage' ? "an " : "a ") + gr.type.getDisplayValue() + ' affecting the ' + gr.cmdb_ci.getDisplayValue()  + " " +  gr.cmdb_ci.sys_class_name.getDisplayValue() + ". ";
+	}
+	
+	
+	ER.setOutputSpeech(current.output_speech_format, msg);
+	//ER.setReprompt("PlainText/SSML", "Text goes here", "SSML goes here");
+	//ER.setAttributes(attrObj); = Object of session attributes
+	ER.setEnd(current.intent_ends_session);
+
+	result = ER.response; //Required
+})(current, content, attributes, new EchoResponseBuilder(), new IntentUtils());]]&gt;&lt;/script&gt;
+        &lt;slot_name_1/&gt;
+        &lt;slot_name_2/&gt;
+        &lt;slot_name_3/&gt;
+        &lt;slot_type_1/&gt;
+        &lt;slot_type_2/&gt;
+        &lt;slot_type_3/&gt;
+        &lt;sys_created_by&gt;jc&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2017-04-13 17:35:22&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0d90ed66db8ef600d1a9f1351d961941&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;jc&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2017-04-18 16:16:39&lt;/sys_updated_on&gt;
+        &lt;top_level_intent&gt;true&lt;/top_level_intent&gt;
+    &lt;/x_snc_amazon_echo_intent&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-05-13 01:47:14</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>7957ac00db72f60015f2de01ce9619a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Are there any service interruptions?</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_metadata_link_7957ac00db72f60015f2de01ce9619a5</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-05-13 01:47:14</sys_updated_on>
+        <tablename>x_snc_amazon_echo_intent</tablename>
+    </sys_metadata_link>
+</record_update>

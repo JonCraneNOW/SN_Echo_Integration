@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>65b172cadb5db200d1a9f1351d9619b3</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;record_update table="x_snc_amazon_echo_intent"&gt;
+    &lt;x_snc_amazon_echo_intent action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;always_available&gt;false&lt;/always_available&gt;
+        &lt;category/&gt;
+        &lt;fallback&gt;false&lt;/fallback&gt;
+        &lt;intent_ends_session&gt;false&lt;/intent_ends_session&gt;
+        &lt;keyword&gt;WhatsHappeningChanges&lt;/keyword&gt;
+        &lt;name&gt;What's happening? (Changes)&lt;/name&gt;
+        &lt;next_intent/&gt;
+        &lt;order/&gt;
+        &lt;output_speech_format/&gt;
+        &lt;reprompt_speech_format/&gt;
+        &lt;script&gt;&lt;![CDATA[(function(content, attributes, erb){
+	var introMessage = "Here is a list of Changes to be implemented today: ";
+	var outroMessage = '';
+	var msg = '';
+	var hasChanges = false;
+	
+	var chg = new GlideRecord('change_request');
+	chg.addEncodedQuery('start_dateONToday@javascript:gs.daysAgoStart(0)@javascript:gs.daysAgoEnd(0)^active=true');
+	chg.query();
+	
+	while (chg.next()){		
+		var updatedArr = chg.end_date.getDisplayValue().split(" ");
+		var updatedDate = updatedArr[0];
+		var updatedTime = updatedArr[1].split(":");
+		updatedTime = updatedTime[0] + ":" + updatedTime[1];
+		
+		var num = chg.number.toString();
+		var numS = num.slice(-7);		
+		
+		var chgNum = "&lt;say-as interpret-as='spell-out'&gt;" + "CHG" + "&lt;/say-as&gt; &lt;say-as interpret-as='digits'&gt;" + numS + "&lt;/say-as&gt;";		
+		
+		introMessage += "Change " + chgNum + " is a " + chg.type.getDisplayValue() + " Change affecting the " + chg.cmdb_ci.getDisplayValue() + " Configuration Item. ";
+		introMessage += "The current risk value is: " + chg.risk.getDisplayValue() + ". ";
+		introMessage += "The purpose of the change is: " + chg.short_description + ". ";
+		introMessage += "This change is scheduled to end on " + updatedDate + " at " + updatedTime + ". ";
+		hasChanges = true;
+	}
+	
+	
+	if (!hasChanges)
+		introMessage = "There are no Changes scheduled to be implemented today. ";
+	
+	outroMessage += "To hear the list of Changes again, say 'hear Changes'. To go back to the status for today, say 'What's happening today'.";
+	
+	msg = "&lt;speak&gt;" + introMessage + outroMessage + "&lt;/speak&gt;";
+	
+	erb.setOutputSpeech("SSML", "", msg);
+	erb.setEnd(false);
+	
+	result = erb.getResponse();
+	
+})(content, attributes, new EchoResponseBuilder());]]&gt;&lt;/script&gt;
+        &lt;slot_name_1/&gt;
+        &lt;slot_name_2/&gt;
+        &lt;slot_name_3/&gt;
+        &lt;slot_type_1/&gt;
+        &lt;slot_type_2/&gt;
+        &lt;slot_type_3/&gt;
+        &lt;sys_created_by&gt;jc&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2017-03-06 03:25:28&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;65b172cadb5db200d1a9f1351d9619b3&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;jc&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2017-03-06 03:52:59&lt;/sys_updated_on&gt;
+        &lt;top_level_intent&gt;false&lt;/top_level_intent&gt;
+    &lt;/x_snc_amazon_echo_intent&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-05-13 01:47:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f367ec00db72f60015f2de01ce9619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>What's happening? (Changes)</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_metadata_link_f367ec00db72f60015f2de01ce9619bd</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-05-13 01:47:39</sys_updated_on>
+        <tablename>x_snc_amazon_echo_intent</tablename>
+    </sys_metadata_link>
+</record_update>

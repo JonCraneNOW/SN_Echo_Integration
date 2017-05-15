@@ -17,7 +17,10 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" hint="Choose either PlainText or SSML. See URL for SSML markup documentation." label="Reprompt speech format" max_length="40" name="reprompt_speech_format" type="string">
-            <choice/>
+            <choice>
+                <element label="PlainText" sequence="0" value="PlainText"/>
+                <element label="SSML" sequence="1" value="SSML"/>
+            </choice>
         </element>
         <element default="(function(current, content, attributes, ER, IntentUtils){&#13;&#10;&#9;/*&#13;&#10;&#9;ER.setOutputSpeech(current.output_speech_format, &quot;Text goes here&quot;, &quot;SSML goes here&quot;);&#13;&#10;&#9;ER.setReprompt(current.reprompt_speech_format, &quot;Text goes here&quot;, &quot;SSML goes here&quot;);&#13;&#10;&#9;ER.setAttributes(attrObj); = Object of session attributes&#13;&#10;&#9;ER.setEnd(current.intent_ends_session); = Should this end the session?&#13;&#10;&#9;*/&#13;&#10;&#13;&#10;&#9;result = ER.response; //Required&#13;&#10;})(current, content, attributes, new EchoResponseBuilder(), new IntentUtils());" label="Script" max_length="8000" name="script" type="script"/>
         <element label="Slot name" max_length="40" name="slot_name_1" type="string"/>

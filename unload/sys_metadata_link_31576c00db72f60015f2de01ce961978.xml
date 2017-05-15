@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload</directory>
+        <documentkey>0555b24edb5db200d1a9f1351d961952</documentkey>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;record_update table="x_snc_amazon_echo_intent"&gt;
+    &lt;x_snc_amazon_echo_intent action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;false&lt;/active&gt;
+        &lt;always_available&gt;false&lt;/always_available&gt;
+        &lt;category/&gt;
+        &lt;fallback&gt;false&lt;/fallback&gt;
+        &lt;intent_ends_session&gt;false&lt;/intent_ends_session&gt;
+        &lt;keyword&gt;CreateIncident&lt;/keyword&gt;
+        &lt;name&gt;Create an Incident (Create)&lt;/name&gt;
+        &lt;next_intent/&gt;
+        &lt;order/&gt;
+        &lt;output_speech_format/&gt;
+        &lt;reprompt_speech_format/&gt;
+        &lt;script&gt;&lt;![CDATA[(function(content, attributes, erb){
+	var issueText = content.Description.value;
+	var userName = attributes.UserAttributes.name;
+	
+	var inc = new GlideRecord('incident');
+	inc.initialize();
+	inc.short_description = issueText;
+	inc.description = "Opened by: " + userName + "\n" + issueText;
+	inc.contact_type = "Alexa";
+	var id = inc.insert();
+	
+	var incRec = new GlideRecord('incident');
+	incRec.get(id);
+	var number = incRec.number;
+	
+	var num = number.toString();
+	var numS = num.slice(-7);
+	
+	var incNum = "&lt;say-as interpret-as='spell-out'&gt;" + "INC" + "&lt;/say-as&gt; &lt;say-as interpret-as='digits'&gt;" + numS + "&lt;/say-as&gt;";
+	
+	var ssml = "&lt;speak&gt;";
+	ssml += "Your incident has been created. Here is your confirmation number: " + incNum;
+	//ssml += "&lt;say-as interpret-as='digits'&gt;" + number +"&lt;/say-as&gt;.";
+	ssml += "&lt;/speak&gt;";
+	
+	erb.setOutputSpeech("SSML", null, ssml);
+	//erb.setReprompt("PlainText", "I didn't catch that. Tell me your issue by saying 'My issue is...' followed by your issue.", "");
+	erb.setEnd(true);
+	result = erb.response;
+})(content, attributes, new EchoResponseBuilder());]]&gt;&lt;/script&gt;
+        &lt;slot_name_1&gt;Description&lt;/slot_name_1&gt;
+        &lt;slot_name_2/&gt;
+        &lt;slot_name_3/&gt;
+        &lt;slot_type_1 display_value="AMAZON.LITERAL"&gt;d480c646dbd9b200d1a9f1351d9619a6&lt;/slot_type_1&gt;
+        &lt;slot_type_2/&gt;
+        &lt;slot_type_3/&gt;
+        &lt;sys_created_by&gt;jc&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2017-03-06 03:41:44&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;0555b24edb5db200d1a9f1351d961952&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;
+        &lt;sys_updated_by&gt;jc&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2017-04-13 02:02:30&lt;/sys_updated_on&gt;
+        &lt;top_level_intent&gt;false&lt;/top_level_intent&gt;
+    &lt;/x_snc_amazon_echo_intent&gt;
+&lt;/record_update&gt;
+</payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>jc</sys_created_by>
+        <sys_created_on>2017-05-13 01:47:14</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>31576c00db72f60015f2de01ce961978</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create an Incident (Create)</sys_name>
+        <sys_package display_value="Amazon Echo" source="x_snc_amazon_echo">101eb7da13a21200d0143d622244b063</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Amazon Echo">101eb7da13a21200d0143d622244b063</sys_scope>
+        <sys_update_name>sys_metadata_link_31576c00db72f60015f2de01ce961978</sys_update_name>
+        <sys_updated_by>jc</sys_updated_by>
+        <sys_updated_on>2017-05-13 01:47:14</sys_updated_on>
+        <tablename>x_snc_amazon_echo_intent</tablename>
+    </sys_metadata_link>
+</record_update>
